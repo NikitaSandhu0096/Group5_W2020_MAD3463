@@ -116,4 +116,5 @@ public abstract class Vehicle implements IDisplay {
         this.vehicleRatePerKm = vehicleRatePerKm;
     }
 
+
 }
