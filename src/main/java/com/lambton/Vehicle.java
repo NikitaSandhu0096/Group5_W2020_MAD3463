@@ -8,6 +8,11 @@ enum isInsured {
     YES,
     NO
 }
+enum fuelType{
+    DIESEL,
+    PETROL,
+    ELECTRIC
+}
 
 public abstract class Vehicle implements IDisplay {
 
@@ -16,6 +21,8 @@ public abstract class Vehicle implements IDisplay {
     String manufacturerName;
     String driverName;
     String insuranceProviderName;
+    int noOfSeats;
+
 
 
 
