@@ -66,6 +66,19 @@ public class Owner extends Person {
 
     public void display()
     {
-
+        System.out.println("Owner's Id : "+ Id);
+        System.out.println("Owner's First Name : "+ firstName);
+        System.out.println("Owner's Last Name : "+ lastName);
+        System.out.println("Owner's Gender : "+ gender);
+        System.out.println("Owner's Birth Date : "+ birthDate);
+        System.out.println("Owner's Age : "+ age);
+        System.out.println("Owner's Mobile Number : "+ mobileNumber);
+        System.out.println("Owner's email Id : "+ emailId);
+        System.out.println("Owner's User Name : "+ userName);
+        System.out.println("Owner's Password : "+ password);
+        System.out.println("Owner's Company Title : "+ companyTitle);
+        System.out.println("Owner's Business and Landline Number : "+ businessLandLineNumber);
+        System.out.println("Owner's website : "+website);
+        System.out.println("Owner's Vehicle List Owned: "+vehicleListOwned);
     }
 }
