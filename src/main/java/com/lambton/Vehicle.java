@@ -27,5 +27,4 @@ public abstract class Vehicle implements IDisplay {
     HashMap<String, Float> vehicleBaseRate = new HashMap<String, Float>();
     HashMap<String, Float> vehicleRatePerKm = new HashMap<String, Float>();
 
-
 }
