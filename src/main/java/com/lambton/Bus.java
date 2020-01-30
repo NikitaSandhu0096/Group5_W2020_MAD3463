@@ -12,9 +12,18 @@ package com.lambton;
     }
     public class Bus extends Vehicle implements IDisplay
     {
+        public Bus()
+        {
+        }
+        public Bus(String busType,WiFi wifi,Bus_Access_Available access)
+        {
+            this.busType = busType;
+            this.wifi= wifi;
+            this.access= access;
+        }
         String busType;
         WiFi wifi;
-        Bus_Access_Available Access;
+        Bus_Access_Available access;
 
         @Override
         public void display()
