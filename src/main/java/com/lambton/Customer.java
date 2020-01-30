@@ -6,4 +6,8 @@ public class Customer extends Person {
     String address;
     String city;
     // VehicleRent;
+
+    public void display(){
+
+    }
 }
