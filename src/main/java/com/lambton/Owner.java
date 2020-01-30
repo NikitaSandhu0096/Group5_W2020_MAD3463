@@ -7,4 +7,8 @@ public class Owner extends Person {
     int businessLandLineNumber;
     String website;
     ArrayList<String> vehicleListOwned = new ArrayList<>();
+
+    public void display(){
+
+    }
 }

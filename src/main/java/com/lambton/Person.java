@@ -18,8 +18,5 @@ public abstract class Person implements IDisplay {
     String userName;
     String password;
 
-    @Override
-    public void display() {
-
-    }
+    public abstract void display();
 }
