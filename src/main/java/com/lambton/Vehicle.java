@@ -1,5 +1,7 @@
 package com.lambton;
 
+import java.util.HashMap;
+
 enum isSelfDrive {
     YES,
     NO
@@ -22,10 +24,6 @@ public abstract class Vehicle implements IDisplay {
     String driverName;
     String insuranceProviderName;
     int noOfSeats;
-
-
-
-
-
-
+    HashMap<String, Float> vehicleBaseRate = new HashMap<String, Float>();
+    HashMap<String, Float> ratePerKm = new HashMap<String, Float>();
 }
