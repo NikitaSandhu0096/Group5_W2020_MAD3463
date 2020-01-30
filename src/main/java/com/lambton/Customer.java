@@ -36,7 +36,6 @@ public class Customer extends Person
         this.city = city;
     }
 
-    @Override
     public int calculatePersonAge(){
         int age;
         LocalDate today = LocalDate.now();
