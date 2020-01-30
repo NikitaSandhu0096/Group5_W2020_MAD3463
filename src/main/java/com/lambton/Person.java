@@ -22,6 +22,10 @@ public abstract class Person implements IDisplay {
 
     public abstract void display();
 
+    public Person(){
+
+    }
+
     public Person(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
                   int mobileNumber, String emailId, String userName,String password){
         this.Id = Id;
@@ -36,9 +40,7 @@ public abstract class Person implements IDisplay {
         this.password = password;
     }
 
-    public int calculateStudentAge(){
-        return age;
-    }
+    public abstract int calculateStudentAge();
 
     public int getId() {
         return Id;
