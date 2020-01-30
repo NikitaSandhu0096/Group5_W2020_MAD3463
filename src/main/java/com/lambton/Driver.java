@@ -12,10 +12,6 @@ public class Driver extends Person {
     private IsDrivingHistoryCleared isDrivingHistoryCleared;
     private float Salary;
 
-    public void display(){
-
-    }
-
     public Driver(){
         super();
     }
@@ -26,15 +22,6 @@ public class Driver extends Person {
         super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
         this.drivingLicenceNumber = drivingLicenceNumber;
         this.isDrivingHistoryCleared = isDrivingHistoryCleared;
-    }
-
-    @Override
-    public int calculatePersonAge() {
-        int age;
-        LocalDate today = LocalDate.now();
-        age = today.getYear() - birthDate.getYear();
-
-        return age;
     }
 
     public String getDrivingLicenceNumber() {
@@ -59,5 +46,19 @@ public class Driver extends Person {
 
     public void setSalary(float salary) {
         Salary = salary;
+    }
+
+    @Override
+    public int calculatePersonAge() {
+        int age;
+        LocalDate today = LocalDate.now();
+        age = today.getYear() - birthDate.getYear();
+
+        return age;
+    }
+
+    public void display()
+    {
+
     }
 }

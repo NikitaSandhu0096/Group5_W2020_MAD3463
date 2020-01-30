@@ -39,9 +39,7 @@ public abstract class Person implements IDisplay {
         this.password = password;
     }
 
-    public int calculatePersonAge(){
-        return age;
-    }
+    public abstract int calculatePersonAge();
 
     public int getId() {
         return Id;
