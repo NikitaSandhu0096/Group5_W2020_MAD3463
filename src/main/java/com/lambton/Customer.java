@@ -14,7 +14,7 @@ public class Customer extends Person
     }
 
     public Customer(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
-                    int mobileNumber, String emailId, String userName,String password, String address, String city){
+                    int mobileNumber, String emailId, String userName, String password, String address, String city){
         super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
         this.address = address;
         this.city = city;
@@ -47,6 +47,17 @@ public class Customer extends Person
 
     public void display()
     {
-
+        System.out.println("Customer's Id : "+ Id);
+        System.out.println("Customer's First Name : "+ firstName);
+        System.out.println("Customer's Last Name : "+ lastName);
+        System.out.println("Customer's Gender : "+ gender);
+        System.out.println("Customer's Birth Date : "+ birthDate);
+        System.out.println("Customer's Age : "+ age);
+        System.out.println("Customer's Mobile Number : "+ mobileNumber);
+        System.out.println("Customer's email Id : "+ emailId);
+        System.out.println("Customer's User Name : "+ userName);
+        System.out.println("Customer's Password : "+ password);
+        System.out.println("Customer's Address : "+ address);
+        System.out.println("Customer's City : "+ city);
     }
 }
