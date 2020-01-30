@@ -14,7 +14,7 @@ public class Owner extends Person {
     }
 
     public Owner(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
-                   int mobileNumber, String emailId, String userName,String password,
+                   int mobileNumber, String emailId, String userName, String password,
                    String companyTitle, int businessLandLineNumber, String website, ArrayList<String> vehicleListOwned){
         super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
         this.companyTitle = companyTitle;
