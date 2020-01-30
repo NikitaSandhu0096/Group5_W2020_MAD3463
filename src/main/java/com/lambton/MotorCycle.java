@@ -11,20 +11,18 @@ public class MotorCycle extends Vehicle implements IDisplay {
     {
         super();
     }
-    public MotorCycle(protected float maxtopspeed,protected float milage,int vehicleIdentificationNumber,
+    public MotorCycle(protected float maxtopspeed ,protected float milage,int vehicleIdentificationNumber,
                       String vehicleDescription,vehicleIsSelfDrive vehicleIsSelfDrive,String vehicleManufacturerName,
                       String vehicleDriverName, String vehicleInsuranceProviderName,
                       int vehicleNoOfSeats,HashMap<String, Float> vehicleBaseRate,
                       HashMap<String, Float> vehicleRatePerKm,vehicleIsInsured vehicleIsInsured,
                       vehicleFuelType vehicleFuelType)
     {
-        super(int vehicleIdentificationNumber,String vehicleDescription,
-            vehicleIsSelfDrive vehicleIsSelfDrive,String vehicleManufacturerName,
-            String vehicleDriverName, String vehicleInsuranceProviderName,
-            int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRate,
-            HashMap<String, Float> vehicleRatePerKm,
-            vehicleIsInsured vehicleIsInsured,vehicleFuelType vehicleFuelType);
-
+        super(vehicleIdentificationNumber,vehicleDescription, vehicleIsSelfDrive,vehicleManufacturerName,
+            String vehicleDriverName, String vehicleInsuranceProviderName, vehicleNoOfSeats, vehicleBaseRate,
+                vehicleRatePerKm,vehicleIsInsured,vehicleFuelType);
+        this.maxtopspeed = maxtopspeed;
+        this.milage = milage;
     }
 
 
