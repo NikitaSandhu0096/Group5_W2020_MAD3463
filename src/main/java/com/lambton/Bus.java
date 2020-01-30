@@ -10,7 +10,7 @@ package com.lambton;
         YES,
         NO
     }
-    public class Bus extends Vehicle
+    public class Bus extends Vehicle implements IDisplay
     {
         String busType;
         WiFi wifi;

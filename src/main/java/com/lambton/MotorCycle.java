@@ -1,6 +1,6 @@
 package com.lambton;
 
-public class MotorCycle extends Vehicle {
+public class MotorCycle extends Vehicle implements IDisplay {
     float maxtopspeed;
     float milage;
 
