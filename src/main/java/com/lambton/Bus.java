@@ -1,6 +1,8 @@
 package com.lambton;
 
-    enum WiFi
+import java.util.HashMap;
+
+enum WiFi
     {
         YES,
         NO
@@ -12,11 +14,24 @@ package com.lambton;
     }
     public class Bus extends Vehicle implements IDisplay
     {
+        private String busType;
+        private WiFi wifi;
+        private Bus_Access_Available access;
+
         public Bus()
         {
         }
-        public Bus(String busType,WiFi wifi,Bus_Access_Available access)
+        public Bus(String busType, WiFi wifi, Bus_Access_Available access, int vehicleIdentificationNumber,
+                   String vehicleDescription, vehicleIsSelfDrive vehicleIsSelfDrive, String vehicleManufacturerName,
+                   String vehicleDriverName, String vehicleInsuranceProviderName,
+                   int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRate,
+                   HashMap<String, Float> vehicleRatePerKm, vehicleIsInsured vehicleIsInsured,
+                   vehicleFuelType vehicleFuelType)
         {
+            super(vehicleIdentificationNumber,vehicleDescription, vehicleIsSelfDrive,vehicleManufacturerName,
+                    vehicleDriverName, vehicleInsuranceProviderName, vehicleNoOfSeats, vehicleBaseRate,
+                    vehicleRatePerKm,vehicleIsInsured,vehicleFuelType);
+
             this.busType = busType;
             this.wifi= wifi;
             this.access= access;
@@ -46,9 +61,6 @@ package com.lambton;
             this.access = access;
         }
 
-        String busType;
-        WiFi wifi;
-        Bus_Access_Available access;
 
         @Override
         public void display()
