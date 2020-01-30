@@ -10,7 +10,7 @@ enum IsDrivingHistoryCleared {
 public class Driver extends Person {
     private String drivingLicenceNumber;
     private IsDrivingHistoryCleared isDrivingHistoryCleared;
-    private float salary;
+    private float Salary;
 
     public Driver(){
         super();
@@ -18,11 +18,10 @@ public class Driver extends Person {
 
     public Driver(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
                    int mobileNumber, String emailId, String userName, String password,
-                   String drivingLicenceNumber, IsDrivingHistoryCleared isDrivingHistoryCleared, float salary){
+                   String drivingLicenceNumber, IsDrivingHistoryCleared isDrivingHistoryCleared){
         super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
         this.drivingLicenceNumber = drivingLicenceNumber;
         this.isDrivingHistoryCleared = isDrivingHistoryCleared;
-        this.salary = salary;
     }
 
     public String getDrivingLicenceNumber() {
@@ -42,11 +41,11 @@ public class Driver extends Person {
     }
 
     public float getSalary() {
-        return salary;
+        return Salary;
     }
 
     public void setSalary(float salary) {
-        this.salary = salary;
+        Salary = salary;
     }
 
     @Override
@@ -61,17 +60,21 @@ public class Driver extends Person {
     public void display()
     {
         System.out.println("Driver's Id : "+ Id);
-        System.out.println("Customer's First Name : "+ firstName);
-        System.out.println("Customer's Last Name : "+ lastName);
-        System.out.println("Customer's Gender : "+ gender);
-        System.out.println("Customer's Birth Date : "+ birthDate);
-        System.out.println("Customer's Age : "+ age);
-        System.out.println("Customer's Mobile Number : "+ mobileNumber);
-        System.out.println("Customer's email Id : "+ emailId);
-        System.out.println("Customer's User Name : "+ userName);
-        System.out.println("Customer's Password : "+ password);
-        System.out.println("Customer's Address : "+ drivingLicenceNumber);
-        System.out.println("Customer's City : "+ isDrivingHistoryCleared);
-        System.out.println("Customer's City : "+ salary);
+        System.out.println("Driver's First Name : "+ firstName);
+        System.out.println("Driver's Last Name : "+ lastName);
+        System.out.println("Driver's Gender : "+ gender);
+        System.out.println("Driver's Birth Date : "+ birthDate);
+        System.out.println("Driver's Age : "+ age);
+        System.out.println("Driver's Mobile Number : "+ mobileNumber);
+        System.out.println("Driver's email Id : "+ emailId);
+        System.out.println("Driver's User Name : "+ userName);
+        System.out.println("Driver's Password : "+ password);
+        System.out.println("Driver's Address : "+ address);
+        System.out.println("Driver's City : "+ city);
+
+
+
+
+
     }
 }
