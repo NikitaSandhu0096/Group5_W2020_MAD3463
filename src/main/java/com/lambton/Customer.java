@@ -9,11 +9,6 @@ public class Customer extends Person
     private String city;
     //private VehicleRent;
 
-    public void display()
-    {
-
-    }
-
     public Customer(){
         super();
     }
@@ -23,15 +18,6 @@ public class Customer extends Person
         super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
         this.address = address;
         this.city = city;
-    }
-
-    @Override
-    public int calculatePersonAge(){
-        int age;
-        LocalDate today = LocalDate.now();
-        age = today.getYear() - birthDate.getYear();
-
-        return age;
     }
 
     public String getAddress() {
@@ -48,5 +34,19 @@ public class Customer extends Person
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    @Override
+    public int calculatePersonAge(){
+        int age;
+        LocalDate today = LocalDate.now();
+        age = today.getYear() - birthDate.getYear();
+
+        return age;
+    }
+
+    public void display()
+    {
+
     }
 }
