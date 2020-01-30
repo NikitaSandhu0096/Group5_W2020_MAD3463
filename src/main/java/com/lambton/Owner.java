@@ -9,10 +9,6 @@ public class Owner extends Person {
     private String website;
     private ArrayList<String> vehicleListOwned = new ArrayList<>();
 
-    public void display(){
-
-    }
-
     public Owner(){
         super();
     }
@@ -57,5 +53,19 @@ public class Owner extends Person {
 
     public void setVehicleListOwned(ArrayList<String> vehicleListOwned) {
         this.vehicleListOwned = vehicleListOwned;
+    }
+
+    @Override
+    public int calculatePersonAge(){
+        int age;
+        LocalDate today = LocalDate.now();
+        age = today.getYear() - birthDate.getYear();
+
+        return age;
+    }
+
+    public void display()
+    {
+
     }
 }
