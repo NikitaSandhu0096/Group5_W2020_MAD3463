@@ -5,9 +5,6 @@ import java.util.ArrayList;
 public  class Car extends Vehicle implements IDisplay
 {
 
-    protected String carType ;
-    protected ArrayList<String> carColor = new ArrayList<> ();
-
     public Car()
     {}
     public  Car(String carType,ArrayList<String> carColor)
@@ -15,6 +12,9 @@ public  class Car extends Vehicle implements IDisplay
         this.carType = carType;
         this.carColor = carColor;
     }
+
+    public String carType ;
+    public ArrayList<String> carColor = new ArrayList<> ();
 
     public String getCarType()
     {
@@ -29,12 +29,19 @@ public  class Car extends Vehicle implements IDisplay
     public ArrayList<String> getCarColor()
     {
         return carColor;
+
     }
+
 
     public void setCarColor(ArrayList<String> carColor)
     {
         this.carColor = carColor;
     }
+
+
+
+
+
 
     @Override
         public void display()
