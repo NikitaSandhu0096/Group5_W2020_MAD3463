@@ -1,7 +1,32 @@
 package com.lambton;
 
+import java.util.HashMap;
+
 public class MotorCycle extends Vehicle implements IDisplay {
-    public MotorCycle(){}
+
+    protected float maxtopspeed;
+    protected float milage;
+
+    public MotorCycle()
+    {
+        super();
+    }
+    public MotorCycle(protected float maxtopspeed,protected float milage,int vehicleIdentificationNumber,
+                      String vehicleDescription,vehicleIsSelfDrive vehicleIsSelfDrive,String vehicleManufacturerName,
+                      String vehicleDriverName, String vehicleInsuranceProviderName,
+                      int vehicleNoOfSeats,HashMap<String, Float> vehicleBaseRate,
+                      HashMap<String, Float> vehicleRatePerKm,vehicleIsInsured vehicleIsInsured,
+                      vehicleFuelType vehicleFuelType)
+    {
+        super(int vehicleIdentificationNumber,String vehicleDescription,
+            vehicleIsSelfDrive vehicleIsSelfDrive,String vehicleManufacturerName,
+            String vehicleDriverName, String vehicleInsuranceProviderName,
+            int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRate,
+            HashMap<String, Float> vehicleRatePerKm,
+            vehicleIsInsured vehicleIsInsured,vehicleFuelType vehicleFuelType);
+
+    }
+
 
     public float getMaxtopspeed() {
         return maxtopspeed;
@@ -25,8 +50,6 @@ public class MotorCycle extends Vehicle implements IDisplay {
         this.milage= milage;
     }
 
-    protected float maxtopspeed;
-    protected float milage;
 
     @Override
     public void display() {
