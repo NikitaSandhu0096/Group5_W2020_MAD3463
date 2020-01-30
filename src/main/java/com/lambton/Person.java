@@ -17,4 +17,9 @@ public abstract class Person implements IDisplay {
     String emailId;
     String userName;
     String password;
+
+    @Override
+    public void display() {
+
+    }
 }
