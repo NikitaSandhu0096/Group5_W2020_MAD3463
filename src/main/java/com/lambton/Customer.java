@@ -13,7 +13,7 @@ public class Customer extends Person
         super();
     }
 
-    public Customer( int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
+    public Customer(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
                     int mobileNumber, String emailId, String userName,String password, String address, String city){
         super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
         this.address = address;

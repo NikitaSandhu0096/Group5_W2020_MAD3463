@@ -16,7 +16,7 @@ public class Driver extends Person {
         super();
     }
 
-    public Driver( int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
+    public Driver(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
                    int mobileNumber, String emailId, String userName,String password,
                    String drivingLicenceNumber, IsDrivingHistoryCleared isDrivingHistoryCleared){
         super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
