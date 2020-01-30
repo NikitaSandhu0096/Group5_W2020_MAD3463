@@ -14,27 +14,39 @@ public class Customer extends Person
 
     }
 
-    public Customer(String address, String city, int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
-                    int mobileNumber, String emailId, String userName,String password){
-        this.address = address;
-        this.city = city;
-        this.Id = Id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.gender = gender;
-        this.birthDate = birthDate;
-        this.age = calculateStudentAge();
-        this.mobileNumber = mobileNumber;
-        this.emailId = emailId;
-        this.userName = userName;
-        this.password = password;
+    public Customer(){
+        super();
     }
 
-    public int calculateStudentAge(){
+    public Customer( int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
+                    int mobileNumber, String emailId, String userName,String password, String address, String city){
+        super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
+        this.address = address;
+        this.city = city;
+    }
+
+    @Override
+    public int calculatePersonAge(){
         int age;
         LocalDate today = LocalDate.now();
         age = today.getYear() - birthDate.getYear();
 
         return age;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }

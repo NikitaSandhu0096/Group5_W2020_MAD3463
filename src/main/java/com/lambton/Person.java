@@ -33,14 +33,14 @@ public abstract class Person implements IDisplay {
         this.lastName = lastName;
         this.gender = gender;
         this.birthDate = birthDate;
-        this.age = calculateStudentAge();
+        this.age = calculatePersonAge();
         this.mobileNumber = mobileNumber;
         this.emailId = emailId;
         this.userName = userName;
         this.password = password;
     }
 
-    public abstract int calculateStudentAge();
+    public abstract int calculatePersonAge();
 
     public int getId() {
         return Id;
