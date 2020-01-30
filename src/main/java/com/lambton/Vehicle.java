@@ -20,29 +20,36 @@ public abstract class Vehicle implements IDisplay {
 
     protected int vehicleIdentificationNumber;
     protected String vehicleDescription;
+    protected vehicleIsSelfDrive vehicleIsSelfDrive;
     protected String vehicleManufacturerName;
     protected String vehicleDriverName;
     protected String vehicleInsuranceProviderName;
     protected int vehicleNoOfSeats;
     protected HashMap<String, Float> vehicleBaseRate = new HashMap<String, Float>();
     protected HashMap<String, Float> vehicleRatePerKm = new HashMap<String, Float>();
+    protected vehicleIsInsured vehicleIsInsured;
+    protected vehicleFuelType vehicleFuelType;
+
 
     public  Vehicle(){
 
     }
-    public Vehicle(int vehicleIdentificationNumber,String vehicleDescription,String vehicleManufacturerName,
+    public Vehicle(int vehicleIdentificationNumber,String vehicleDescription,vehicleIsSelfDrive vehicleIsSelfDrive,String vehicleManufacturerName,
                    String vehicleDriverName, String vehicleInsuranceProviderName, int vehicleNoOfSeats,
                    HashMap<String, Float> vehicleBaseRate,
-                   HashMap<String, Float> vehicleRatePerKm)
+                   HashMap<String, Float> vehicleRatePerKm,vehicleIsInsured vehicleIsInsured,vehicleFuelType vehicleFuelType)
     {
         this.vehicleIdentificationNumber=vehicleIdentificationNumber;
         this.vehicleDescription=vehicleDescription;
+        this.vehicleIsSelfDrive=vehicleIsSelfDrive;
         this.vehicleManufacturerName=vehicleManufacturerName;
         this.vehicleDriverName=vehicleDriverName;
         this.vehicleInsuranceProviderName=vehicleInsuranceProviderName;
         this.vehicleNoOfSeats=vehicleNoOfSeats;
         this.vehicleBaseRate=vehicleBaseRate;
         this.vehicleRatePerKm=vehicleRatePerKm;
+        this.vehicleIsInsured=vehicleIsInsured;
+        this.vehicleFuelType=vehicleFuelType;
     }
 
     public int getVehicleIdentificationNumber() {
