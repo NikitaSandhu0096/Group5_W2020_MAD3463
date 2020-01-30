@@ -65,6 +65,19 @@ enum WiFi
         @Override
         public void display()
         {
+            System.out.println("VehicleIdentificationNumber" + vehicleIdentificationNumber);
+            System.out.println("vehicleDescription"+vehicleDescription);
+            System.out.println("vehicleIsSelfDrive"+vehicleIsSelfDrive);
+            System.out.println("vehicleManufacturerName"+vehicleManufacturerName);
+            System.out.println("vehicleDriverName"+vehicleDriverName);
+            System.out.println("vehicleInsuranceProviderName"+vehicleInsuranceProviderName);
+            System.out.println("vehicleNoOfSeats"+vehicleNoOfSeats);
+            System.out.println("vehicleBaseRate"+vehicleBaseRate);
+            System.out.println("vehicleRatePerKm"+vehicleRatePerKm);
+            System.out.println("vehicleIsInsured"+vehicleIsInsured);
+            System.out.println("vehicleFuelType"+vehicleFuelType);
+
+
 
         }
 
