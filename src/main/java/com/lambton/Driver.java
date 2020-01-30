@@ -37,5 +37,27 @@ public class Driver extends Person {
         return age;
     }
 
-    
+    public String getDrivingLicenceNumber() {
+        return drivingLicenceNumber;
+    }
+
+    public void setDrivingLicenceNumber(String drivingLicenceNumber) {
+        this.drivingLicenceNumber = drivingLicenceNumber;
+    }
+
+    public IsDrivingHistoryCleared getIsDrivingHistoryCleared() {
+        return isDrivingHistoryCleared;
+    }
+
+    public void setIsDrivingHistoryCleared(IsDrivingHistoryCleared isDrivingHistoryCleared) {
+        this.isDrivingHistoryCleared = isDrivingHistoryCleared;
+    }
+
+    public float getSalary() {
+        return Salary;
+    }
+
+    public void setSalary(float salary) {
+        Salary = salary;
+    }
 }

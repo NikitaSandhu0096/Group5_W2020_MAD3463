@@ -20,6 +20,9 @@ public abstract class Person implements IDisplay {
     protected String userName;
     protected String password;
 
+    public Person() {
+    }
+
     public abstract void display();
 
     public Person(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
