@@ -18,24 +18,25 @@ enum vehicleFuelType{
 
 public abstract class Vehicle implements IDisplay {
 
-    int vehicleIdentificationNumber;
-    String vehicleDescription;
-    String vehicleManufacturerName;
-    String vehicleDriverName;
-    String vehicleInsuranceProviderName;
-    int vehicleNoOfSeats;
-    HashMap<String, Float> vehicleBaseRate = new HashMap<String, Float>();
-    HashMap<String, Float> vehicleRatePerKm = new HashMap<String, Float>();
+    protected int vehicleIdentificationNumber;
+    protected String vehicleDescription;
+    protected String vehicleManufacturerName;
+    protected String vehicleDriverName;
+    protected String vehicleInsuranceProviderName;
+    protected int vehicleNoOfSeats;
+    protected HashMap<String, Float> vehicleBaseRate = new HashMap<String, Float>();
+    protected HashMap<String, Float> vehicleRatePerKm = new HashMap<String, Float>();
 
-    public void vehicleSpeed() {
-
-    }
     public  Vehicle(){
 
     }
+    public Vehicle(int vehicleIdentificationNumber,String vehicleDescription,String vehicleManufacturerName,
+                   String vehicleDriverName, String vehicleInsuranceProviderName, int vehicleNoOfSeats,
+                   HashMap<String, Float> vehicleBaseRate,
+                   HashMap<String, Float> vehicleRatePerKm)
+    {
 
 
-
-
+    }
 
 }
