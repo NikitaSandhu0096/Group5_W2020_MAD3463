@@ -59,6 +59,22 @@ public class Driver extends Person {
 
     public void display()
     {
+        System.out.println("Driver's Id : "+ Id);
+        System.out.println("Driver's First Name : "+ firstName);
+        System.out.println("Driver's Last Name : "+ lastName);
+        System.out.println("Driver's Gender : "+ gender);
+        System.out.println("Driver's Birth Date : "+ birthDate);
+        System.out.println("Driver's Age : "+ age);
+        System.out.println("Driver's Mobile Number : "+ mobileNumber);
+        System.out.println("Driver's email Id : "+ emailId);
+        System.out.println("Driver's User Name : "+ userName);
+        System.out.println("Driver's Password : "+ password);
+        System.out.println("Driver's Address : "+ address);
+        System.out.println("Driver's City : "+ city);
+
+
+
+
 
     }
 }
