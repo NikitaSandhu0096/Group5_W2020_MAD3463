@@ -2,7 +2,7 @@ package com.lambton;
 
 import java.util.ArrayList;
 
-public static class Car extends Vehicle implements IDisplay
+public  class Car extends Vehicle implements IDisplay
 {
 
     protected String carType ;
