@@ -30,7 +30,11 @@ public abstract class Vehicle implements IDisplay {
     public void vehicleSpeed() {
 
     }
-    
+    public  Vehicle(){
+
+    }
+
+
 
 
 
