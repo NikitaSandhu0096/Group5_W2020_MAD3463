@@ -7,16 +7,16 @@ enum Gender {
 }
 
 public abstract class Person implements IDisplay {
-    int Id;
-    String firstName;
-    String lastName;
-    Gender gender;
-   // LocalDate birthDate;
-    int age;
-    int mobileNumber;
-    String emailId;
-    String userName;
-    String password;
+    protected int Id;
+    protected String firstName;
+    protected String lastName;
+    protected Gender gender;
+   //protected LocalDate birthDate;
+    protected int age;
+    protected int mobileNumber;
+    protected String emailId;
+    protected String userName;
+    protected String password;
 
     public abstract void display();
 }
