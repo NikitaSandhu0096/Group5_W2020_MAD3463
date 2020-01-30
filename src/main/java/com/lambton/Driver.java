@@ -6,9 +6,9 @@ enum IsDrivingHistoryCleared {
 }
 
 public class Driver extends Person {
-    String drivingLicenceNumber;
-    IsDrivingHistoryCleared isDrivingHistoryCleared ;
-    float Salary;
+    private String drivingLicenceNumber;
+    private IsDrivingHistoryCleared isDrivingHistoryCleared ;
+    private float Salary;
 
     public void display(){
 
