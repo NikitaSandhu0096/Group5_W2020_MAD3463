@@ -10,7 +10,7 @@ enum IsDrivingHistoryCleared {
 public class Driver extends Person {
     private String drivingLicenceNumber;
     private IsDrivingHistoryCleared isDrivingHistoryCleared;
-    private float Salary;
+    private float salary;
 
     public Driver(){
         super();
@@ -18,10 +18,11 @@ public class Driver extends Person {
 
     public Driver(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
                    int mobileNumber, String emailId, String userName, String password,
-                   String drivingLicenceNumber, IsDrivingHistoryCleared isDrivingHistoryCleared){
+                   String drivingLicenceNumber, IsDrivingHistoryCleared isDrivingHistoryCleared,float salary){
         super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
         this.drivingLicenceNumber = drivingLicenceNumber;
         this.isDrivingHistoryCleared = isDrivingHistoryCleared;
+        this.salary= salary;
     }
 
     public String getDrivingLicenceNumber() {
@@ -40,12 +41,12 @@ public class Driver extends Person {
         this.isDrivingHistoryCleared = isDrivingHistoryCleared;
     }
 
-    public float getSalary() {
-        return Salary;
+    public float getsalary() {
+        return salary;
     }
 
     public void setSalary(float salary) {
-        Salary = salary;
+        this.salary = salary;
     }
 
     @Override
@@ -69,8 +70,12 @@ public class Driver extends Person {
         System.out.println("Driver's email Id : "+ emailId);
         System.out.println("Driver's User Name : "+ userName);
         System.out.println("Driver's Password : "+ password);
-        System.out.println("Driver's Address : "+ address);
-        System.out.println("Driver's City : "+ city);
+        System.out.println("DrivingLicenceNumber : "+ drivingLicenceNumber);
+        System.out.println("IsDrivingHistoryCleared : "+ isDrivingHistoryCleared);
+        System.out.println("DrivingLicenceNumber: "+ drivingLicenceNumber);
+        System.out.println ("Salary : " + salary  );
+
+
 
 
 
