@@ -1,6 +1,6 @@
-package com.lambton;
+package com.lambton.person;
 
-import com.sun.istack.internal.NotNull;
+import com.lambton.IDisplay;
 
 import java.time.LocalDate;
 

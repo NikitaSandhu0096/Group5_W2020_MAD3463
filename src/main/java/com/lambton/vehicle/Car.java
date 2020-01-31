@@ -1,4 +1,6 @@
-package com.lambton;
+package com.lambton.vehicle;
+
+import com.lambton.IDisplay;
 
 import java.util.ArrayList;
 import java.util.HashMap;
