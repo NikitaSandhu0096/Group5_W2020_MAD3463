@@ -76,6 +76,9 @@ enum WiFi
             System.out.println("vehicleRatePerKm"+vehicleRatePerKm);
             System.out.println("vehicleIsInsured"+vehicleIsInsured);
             System.out.println("vehicleFuelType"+vehicleFuelType);
+            System.out.println("busType"+busType);
+            System.out.println("wifi_available"+wifi);
+            System.out.println("accessibility_service"+access);
 
 
 
