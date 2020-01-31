@@ -74,12 +74,5 @@ public class Driver extends Person {
         System.out.println("IsDrivingHistoryCleared : "+ isDrivingHistoryCleared);
         System.out.println("DrivingLicenceNumber: "+ drivingLicenceNumber);
         System.out.println ("Salary : " + salary);
-
-
-
-
-
-
-
     }
 }
