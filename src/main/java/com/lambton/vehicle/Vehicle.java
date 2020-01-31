@@ -1,4 +1,6 @@
-package com.lambton;
+package com.lambton.vehicle;
+
+import com.lambton.IDisplay;
 
 import java.util.HashMap;
 
@@ -56,7 +58,8 @@ public abstract class Vehicle implements IDisplay {
         return vehicleIdentificationNumber;
     }
 
-    public void setVehicleIdentificationNumber(int vehicleIdentificationNumber) {
+    public void setVehicleIdentificationNumber(int vehicleIdentificationNumber)
+    {
         this.vehicleIdentificationNumber = vehicleIdentificationNumber;
     }
 

@@ -1,7 +1,6 @@
-package com.lambton;
+package com.lambton.person;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 public class Customer extends Person
 {
