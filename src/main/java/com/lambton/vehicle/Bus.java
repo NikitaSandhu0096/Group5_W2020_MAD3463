@@ -2,6 +2,7 @@ package com.lambton.vehicle;
 
 import com.lambton.IDisplay;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 enum WiFi
@@ -16,14 +17,14 @@ enum WiFi
     }
     public class Bus extends Vehicle implements IDisplay
     {
-        private String busType;
+        private ArrayList<String> busType = new ArrayList<>();
         private WiFi wifi;
         private Bus_Access_Available access;
 
         public Bus()
         {
         }
-        public Bus(String busType, WiFi wifi, Bus_Access_Available access, int vehicleIdentificationNumber,
+        public Bus(ArrayList<String> busType, WiFi wifi, Bus_Access_Available access, int vehicleIdentificationNumber,
                    String vehicleDescription, boolean vehicleIsSelfDrive, String vehicleManufacturerName,
                    String vehicleDriverName, String vehicleInsuranceProviderName,
                    int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRatePerDay,
@@ -39,11 +40,11 @@ enum WiFi
             this.access= access;
         }
 
-        public String getBusType() {
+        public ArrayList<String> getBusType() {
             return busType;
         }
 
-        public void setBusType(String busType) {
+        public void setBusType(ArrayList<String> busType) {
             this.busType = busType;
         }
 
