@@ -67,23 +67,20 @@ enum WiFi
         @Override
         public void display()
         {
-            System.out.println("VehicleIdentificationNumber" + vehicleIdentificationNumber);
-            System.out.println("vehicleDescription"+vehicleDescription);
-            System.out.println("vehicleIsSelfDrive"+vehicleIsSelfDrive);
-            System.out.println("vehicleManufacturerName"+vehicleManufacturerName);
-            System.out.println("vehicleDriverName"+vehicleDriverName);
-            System.out.println("vehicleInsuranceProviderName"+vehicleInsuranceProviderName);
-            System.out.println("vehicleNoOfSeats"+vehicleNoOfSeats);
-            System.out.println("vehicleBaseRate"+vehicleBaseRatePerDay);
-            System.out.println("vehicleRatePerKm"+vehicleRatePerKm);
-            System.out.println("vehicleIsInsured"+vehicleIsInsured);
-            System.out.println("vehicleFuelType"+vehicleFuelType);
-            System.out.println("busType"+busType);
-            System.out.println("wifi_available"+wifi);
-            System.out.println("accessibility_service"+access);
-
-
-
+            System.out.println("Bus's Identification Number : " + vehicleIdentificationNumber);
+            System.out.println("Bus's Description : "+vehicleDescription);
+            System.out.println("Bus's is self driving : "+vehicleIsSelfDrive);
+            System.out.println("Bus's Manufacturer's name : "+vehicleManufacturerName);
+            System.out.println("Bus's Driver Name : "+vehicleDriverName);
+            System.out.println("Bus's Insurance Provider's Name : "+vehicleInsuranceProviderName);
+            System.out.println("Bus's no. of seats : "+vehicleNoOfSeats);
+            System.out.println("Bus's Base Rate Per Day : "+vehicleBaseRatePerDay);
+            System.out.println("Bus's Rate per Hour : "+vehicleRatePerKm);
+            System.out.println("Bus's is Insured? : "+vehicleIsInsured);
+            System.out.println("Bus's Fuel Type : "+vehicleFuelType);
+            System.out.println("Bus's Type : "+busType);
+            System.out.println("Bus's wifi Available ? : "+wifi);
+            System.out.println("Bus's access : "+access);
         }
 
     }
