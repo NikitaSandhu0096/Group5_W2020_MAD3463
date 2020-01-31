@@ -16,12 +16,12 @@ public  class Car extends Vehicle implements IDisplay
         super();
     }
     public  Car(String carType,ArrayList<String> carColor,int vehicleIdentificationNumber,String vehicleDescription,vehicleIsSelfDrive vehicleIsSelfDrive,
-                String vehicleManufacturerName,String vehicleDriverName, String vehicleInsuranceProviderName, int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRate,
+                String vehicleManufacturerName,String vehicleDriverName, String vehicleInsuranceProviderName, int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRatePerDay,
                 HashMap<String, Float> vehicleRatePerKm,vehicleIsInsured vehicleIsInsured,vehicleFuelType vehicleFuelType)
     {
         super(vehicleIdentificationNumber,vehicleDescription,vehicleIsSelfDrive,
                 vehicleManufacturerName,vehicleDriverName,vehicleInsuranceProviderName,
-                vehicleNoOfSeats,vehicleBaseRate,vehicleRatePerKm,vehicleIsInsured,vehicleFuelType);
+                vehicleNoOfSeats,vehicleBaseRatePerDay,vehicleRatePerKm,vehicleIsInsured,vehicleFuelType);
         this.carType = carType;
         this.carColor = carColor;
     }
@@ -59,7 +59,7 @@ public  class Car extends Vehicle implements IDisplay
             System.out.println("vehicleDriverName"+vehicleDriverName);
             System.out.println("vehicleInsuranceProviderName"+vehicleInsuranceProviderName);
             System.out.println("vehicleNoOfSeats"+vehicleNoOfSeats);
-            System.out.println("vehicleBaseRate"+vehicleBaseRate);
+            System.out.println("vehicleBaseRate"+vehicleBaseRatePerDay);
             System.out.println("vehicleRatePerKm"+vehicleRatePerKm);
             System.out.println("vehicleIsInsured"+vehicleIsInsured);
             System.out.println("vehicleFuelType"+vehicleFuelType);

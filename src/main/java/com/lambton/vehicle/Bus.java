@@ -26,12 +26,12 @@ enum WiFi
         public Bus(String busType, WiFi wifi, Bus_Access_Available access, int vehicleIdentificationNumber,
                    String vehicleDescription, vehicleIsSelfDrive vehicleIsSelfDrive, String vehicleManufacturerName,
                    String vehicleDriverName, String vehicleInsuranceProviderName,
-                   int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRate,
+                   int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRatePerDay,
                    HashMap<String, Float> vehicleRatePerKm, vehicleIsInsured vehicleIsInsured,
                    vehicleFuelType vehicleFuelType)
         {
             super(vehicleIdentificationNumber,vehicleDescription, vehicleIsSelfDrive,vehicleManufacturerName,
-                    vehicleDriverName, vehicleInsuranceProviderName, vehicleNoOfSeats, vehicleBaseRate,
+                    vehicleDriverName, vehicleInsuranceProviderName, vehicleNoOfSeats, vehicleBaseRatePerDay,
                     vehicleRatePerKm,vehicleIsInsured,vehicleFuelType);
 
             this.busType = busType;
@@ -74,7 +74,7 @@ enum WiFi
             System.out.println("vehicleDriverName"+vehicleDriverName);
             System.out.println("vehicleInsuranceProviderName"+vehicleInsuranceProviderName);
             System.out.println("vehicleNoOfSeats"+vehicleNoOfSeats);
-            System.out.println("vehicleBaseRate"+vehicleBaseRate);
+            System.out.println("vehicleBaseRate"+vehicleBaseRatePerDay);
             System.out.println("vehicleRatePerKm"+vehicleRatePerKm);
             System.out.println("vehicleIsInsured"+vehicleIsInsured);
             System.out.println("vehicleFuelType"+vehicleFuelType);

@@ -27,7 +27,7 @@ public abstract class Vehicle implements IDisplay {
     protected String vehicleDriverName;
     protected String vehicleInsuranceProviderName;
     protected int vehicleNoOfSeats;
-    protected HashMap<String, Float> vehicleBaseRate = new HashMap<String, Float>();
+    protected HashMap<String, Float> vehicleBaseRatePerDay = new HashMap<String, Float>();
     protected HashMap<String, Float> vehicleRatePerKm = new HashMap<String, Float>();
     protected vehicleIsInsured vehicleIsInsured;
     protected vehicleFuelType vehicleFuelType;
@@ -38,7 +38,7 @@ public abstract class Vehicle implements IDisplay {
     }
     public Vehicle(int vehicleIdentificationNumber,String vehicleDescription,vehicleIsSelfDrive vehicleIsSelfDrive,String vehicleManufacturerName,
                    String vehicleDriverName, String vehicleInsuranceProviderName, int vehicleNoOfSeats,
-                   HashMap<String, Float> vehicleBaseRate,
+                   HashMap<String, Float> vehicleBaseRatePerDay,
                    HashMap<String, Float> vehicleRatePerKm,vehicleIsInsured vehicleIsInsured,vehicleFuelType vehicleFuelType)
     {
         this.vehicleIdentificationNumber=vehicleIdentificationNumber;
@@ -48,7 +48,7 @@ public abstract class Vehicle implements IDisplay {
         this.vehicleDriverName=vehicleDriverName;
         this.vehicleInsuranceProviderName=vehicleInsuranceProviderName;
         this.vehicleNoOfSeats=vehicleNoOfSeats;
-        this.vehicleBaseRate=vehicleBaseRate;
+        this.vehicleBaseRatePerDay=vehicleBaseRatePerDay;
         this.vehicleRatePerKm=vehicleRatePerKm;
         this.vehicleIsInsured=vehicleIsInsured;
         this.vehicleFuelType=vehicleFuelType;
@@ -104,11 +104,11 @@ public abstract class Vehicle implements IDisplay {
     }
 
     public HashMap<String, Float> getVehicleBaseRate() {
-        return vehicleBaseRate;
+        return vehicleBaseRatePerDay;
     }
 
     public void setVehicleBaseRate(HashMap<String, Float> vehicleBaseRate) {
-        this.vehicleBaseRate = vehicleBaseRate;
+        this.vehicleBaseRatePerDay = vehicleBaseRate;
     }
 
     public HashMap<String, Float> getVehicleRatePerKm() {

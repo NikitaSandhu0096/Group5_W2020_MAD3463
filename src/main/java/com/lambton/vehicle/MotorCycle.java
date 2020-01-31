@@ -16,12 +16,12 @@ public class MotorCycle extends Vehicle implements IDisplay {
     public MotorCycle( float maxTopSpeed ,float milage,int vehicleIdentificationNumber,
                       String vehicleDescription,vehicleIsSelfDrive vehicleIsSelfDrive,String vehicleManufacturerName,
                       String vehicleDriverName, String vehicleInsuranceProviderName,
-                      int vehicleNoOfSeats,HashMap<String, Float> vehicleBaseRate,
+                      int vehicleNoOfSeats,HashMap<String, Float> vehicleBaseRatePerDay,
                       HashMap<String, Float> vehicleRatePerKm,vehicleIsInsured vehicleIsInsured,
                       vehicleFuelType vehicleFuelType)
     {
         super(vehicleIdentificationNumber,vehicleDescription, vehicleIsSelfDrive,vehicleManufacturerName,
-            vehicleDriverName, vehicleInsuranceProviderName, vehicleNoOfSeats, vehicleBaseRate,
+            vehicleDriverName, vehicleInsuranceProviderName, vehicleNoOfSeats, vehicleBaseRatePerDay,
                 vehicleRatePerKm,vehicleIsInsured,vehicleFuelType);
         this.maxTopSpeed = maxTopSpeed;
         this.milage = milage;
@@ -47,18 +47,18 @@ public class MotorCycle extends Vehicle implements IDisplay {
 
     @Override
     public void display() {
-        System.out.println("MotorCycle's Vehiv : "+ vehicleIdentificationNumber);
-        System.out.println("MotorCycle's Gender : "+ vehicleDescription);
-        System.out.println("MotorCycle's Birth Date : "+ vehicleIsSelfDrive);
-        System.out.println("MotorCycle's Age : "+ vehicleManufacturerName);
-        System.out.println("MotorCycle's Mobile Number : "+ vehicleDriverName);
-        System.out.println("MotorCycle's email Id : "+ vehicleInsuranceProviderName);
-        System.out.println("MotorCycle's User Name : "+ vehicleNoOfSeats);
-        System.out.println("MotorCycle's Password : "+ vehicleBaseRate);
-        System.out.println("MotorCycle's Address : "+ vehicleRatePerKm);
-        System.out.println("MotorCycle's City : "+ vehicleIsInsured);
-        System.out.println("MotorCycle's "+ vehicleFuelType);
-        System.out.println("Motorcycle's Id : "+ maxTopSpeed);
-        System.out.println("MotorCycle's First Name : "+ milage);
+        System.out.println("MotorCycle's Identification Number : "+ vehicleIdentificationNumber);
+        System.out.println("MotorCycle's Description : "+ vehicleDescription);
+        System.out.println("MotorCycle's is self driving : "+ vehicleIsSelfDrive);
+        System.out.println("MotorCycle's Manufacturer's name : "+ vehicleManufacturerName);
+        System.out.println("MotorCycle's Driver Name : "+ vehicleDriverName);
+        System.out.println("MotorCycle's Insurance Provider's Name : "+ vehicleInsuranceProviderName);
+        System.out.println("MotorCycle's no. of seats : "+ vehicleNoOfSeats);
+        System.out.println("MotorCycle's Base Rate Per Day : "+ vehicleBaseRatePerDay);
+        System.out.println("MotorCycle's Rate per Hour : "+ vehicleRatePerKm);
+        System.out.println("MotorCycle's is Insured? : "+ vehicleIsInsured);
+        System.out.println("MotorCycle's Fuel Type : "+ vehicleFuelType);
+        System.out.println("Motorcycle's Top Speed : "+ maxTopSpeed);
+        System.out.println("MotorCycle's Milage : "+ milage);
     }
 }
