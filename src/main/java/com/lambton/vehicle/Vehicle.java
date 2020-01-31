@@ -133,4 +133,6 @@ public abstract class Vehicle implements IDisplay {
     public void setVehicleFuelType(com.lambton.vehicle.vehicleFuelType vehicleFuelType) {
         this.vehicleFuelType = vehicleFuelType;
     }
+
+
 }

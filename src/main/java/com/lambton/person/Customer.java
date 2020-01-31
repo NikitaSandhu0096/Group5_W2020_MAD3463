@@ -7,9 +7,12 @@ import java.util.ArrayList;
 
 public class Customer extends Person
 {
+    VehicleRent vr;
+
     private String address;
     private String city;
     ArrayList<VehicleRent> vehicleRent = new ArrayList<>();
+
 
     public Customer(){
         super();
@@ -102,4 +105,6 @@ public class Customer extends Person
         System.out.println("Customer's Address : "+ address);
         System.out.println("Customer's City : "+ city);
     }
+
+
 }

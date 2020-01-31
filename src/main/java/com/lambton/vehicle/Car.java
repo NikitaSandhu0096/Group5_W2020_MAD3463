@@ -8,14 +8,14 @@ import java.util.HashMap;
 public  class Car extends Vehicle implements IDisplay
 {
 
-    private String carType ;
+    private ArrayList<String> carType  = new ArrayList<>();
     private ArrayList<String> carColor = new ArrayList<> ();
 
     public Car()
     {
         super();
     }
-    public  Car(String carType,ArrayList<String> carColor,int vehicleIdentificationNumber,String vehicleDescription,boolean vehicleIsSelfDrive,
+    public  Car(ArrayList<String> carType,ArrayList<String> carColor,int vehicleIdentificationNumber,String vehicleDescription,boolean vehicleIsSelfDrive,
                 String vehicleManufacturerName,String vehicleDriverName, String vehicleInsuranceProviderName, int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRatePerDay,
                 HashMap<String, Float> vehicleRatePerKm,boolean vehicleIsInsured,vehicleFuelType vehicleFuelType)
     {
@@ -27,13 +27,11 @@ public  class Car extends Vehicle implements IDisplay
     }
 
 
-    public String getCarType()
-    {
+    public ArrayList<String> getCarType() {
         return carType;
     }
 
-    public void setCarType(String carType)
-    {
+    public void setCarType(ArrayList<String> carType) {
         this.carType = carType;
     }
 
