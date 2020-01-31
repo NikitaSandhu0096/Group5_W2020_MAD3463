@@ -40,7 +40,13 @@ public class VehicleRent implements IDisplay {
 
 
     @Override
-    public void display() {
-
+    public void display()
+    {
+        System.out.println("Vehicle's Rent Start Date : "+ rentStartDate);
+        System.out.println("Vehicle's Rent End Date : "+ rentEndDate);
+        System.out.println("Vehicle's Rent in number of days : "+ rentInNoOfDays);
+        System.out.println("Vehicle's type : "+ vehicle);
+        System.out.println("Vehicle's number of kilometers drived : "+ noOfKmDrived);
+        System.out.println("Vehicle's total bill to pay : "+ totalBillToPay);
     }
 }
