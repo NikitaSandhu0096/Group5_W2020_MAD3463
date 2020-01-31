@@ -25,10 +25,10 @@ public class VehicleRent implements IDisplay {
     private float calculateRentInNoOfDays() {
         LocalDate s1 = rentStartDate;
         LocalDate s2 = rentEndDate;
-        if(vehicle = v.getVehicleBaseRatePerDay().get(vehicle)){
-            for(int i=0;i<v.getVehicleRatePerKm().size();i++) {
-                rentInNoOfDays = (s2.getDayOfMonth() - s1.getDayOfMonth()) * v.getVehicleBaseRatePerDay().get(i);
-            }
+        int noOfDays = s2.getDayOfMonth()-s1.getDayOfMonth();
+        float noOfDaysInFloat = (float)noOfDays;
+        if(v.getVehicleBaseRatePerDay().containsValue(vehicle)){
+                rentInNoOfDays = (s2.getDayOfMonth() - s1.getDayOfMonth()) * v.getVehicleBaseRatePerDay().get(vehicle);
         }
         return rentInNoOfDays;
     }
