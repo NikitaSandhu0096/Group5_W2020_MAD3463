@@ -50,8 +50,7 @@ public abstract class Vehicle implements IDisplay {
         return vehicleIdentificationNumber;
     }
 
-    public void setVehicleIdentificationNumber(int vehicleIdentificationNumber)
-    {
+    public void setVehicleIdentificationNumber(int vehicleIdentificationNumber) {
         this.vehicleIdentificationNumber = vehicleIdentificationNumber;
     }
 
@@ -61,6 +60,14 @@ public abstract class Vehicle implements IDisplay {
 
     public void setVehicleDescription(String vehicleDescription) {
         this.vehicleDescription = vehicleDescription;
+    }
+
+    public boolean isVehicleIsSelfDrive() {
+        return vehicleIsSelfDrive;
+    }
+
+    public void setVehicleIsSelfDrive(boolean vehicleIsSelfDrive) {
+        this.vehicleIsSelfDrive = vehicleIsSelfDrive;
     }
 
     public String getVehicleManufacturerName() {
@@ -95,12 +102,12 @@ public abstract class Vehicle implements IDisplay {
         this.vehicleNoOfSeats = vehicleNoOfSeats;
     }
 
-    public HashMap<String, Float> getVehicleBaseRate() {
+    public HashMap<String, Float> getVehicleBaseRatePerDay() {
         return vehicleBaseRatePerDay;
     }
 
-    public void setVehicleBaseRate(HashMap<String, Float> vehicleBaseRate) {
-        this.vehicleBaseRatePerDay = vehicleBaseRate;
+    public void setVehicleBaseRatePerDay(HashMap<String, Float> vehicleBaseRatePerDay) {
+        this.vehicleBaseRatePerDay = vehicleBaseRatePerDay;
     }
 
     public HashMap<String, Float> getVehicleRatePerKm() {
@@ -111,5 +118,19 @@ public abstract class Vehicle implements IDisplay {
         this.vehicleRatePerKm = vehicleRatePerKm;
     }
 
+    public boolean isVehicleIsInsured() {
+        return vehicleIsInsured;
+    }
 
+    public void setVehicleIsInsured(boolean vehicleIsInsured) {
+        this.vehicleIsInsured = vehicleIsInsured;
+    }
+
+    public com.lambton.vehicle.vehicleFuelType getVehicleFuelType() {
+        return vehicleFuelType;
+    }
+
+    public void setVehicleFuelType(com.lambton.vehicle.vehicleFuelType vehicleFuelType) {
+        this.vehicleFuelType = vehicleFuelType;
+    }
 }
