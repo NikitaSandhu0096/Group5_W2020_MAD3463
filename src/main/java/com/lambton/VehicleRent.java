@@ -10,6 +10,7 @@ public class VehicleRent implements IDisplay {
     float kmDrived;
     float bill;
 
+
     @Override
     public void display() {
 
