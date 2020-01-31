@@ -38,12 +38,12 @@ public abstract class Person implements IDisplay {
         this.mobileNumber = mobileNumber;
         this.emailId = emailId;
         this.userName = userName;
-        this.password = calculatePassword(password);
+        this.password = encryptPassword(password);
     }
 
     public abstract int calculatePersonAge();
 
-    public abstract String calculatePassword(String p);
+    public abstract String encryptPassword(String p);
 
     public int getId() {
         return Id;
@@ -118,10 +118,22 @@ public abstract class Person implements IDisplay {
     }
 
     public String getPassword() {
-        return password;
+        decryptPassword(password);
+        return "";
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String decryptPassword(String p) {
+        char[] ch = p.toCharArray();
+        int length = p.length();
+        for(int i=0, j=length-1; i<length;i++, j--){
+            char c = ch[i];
+            ch[i] = ch[j];
+            ch[j] = c;
+        }
+        return new String();
     }
 }

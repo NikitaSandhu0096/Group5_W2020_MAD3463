@@ -65,11 +65,13 @@ public class Owner extends Person {
     }
 
     @Override
-    public String calculatePassword(String p) {
+    public String encryptPassword(String p) {
         char[] ch = p.toCharArray();
         int length = p.length();
-        for(int i=0; i<length;i++){
-            System.out.println("*");
+        for(int i=0, j=length-1; i<length;i++, j--){
+            char c = ch[i];
+            ch[i] = ch[j];
+            ch[j] = c;
         }
         return new String();
     }
