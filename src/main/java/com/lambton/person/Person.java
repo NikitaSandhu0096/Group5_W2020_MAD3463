@@ -38,10 +38,12 @@ public abstract class Person implements IDisplay {
         this.mobileNumber = mobileNumber;
         this.emailId = emailId;
         this.userName = userName;
-        this.password = password;
+        this.password = calculatePassword(password);
     }
 
     public abstract int calculatePersonAge();
+
+    public abstract String calculatePassword(String p);
 
     public int getId() {
         return Id;

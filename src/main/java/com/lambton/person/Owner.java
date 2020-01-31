@@ -64,6 +64,16 @@ public class Owner extends Person {
         return age;
     }
 
+    @Override
+    public String calculatePassword(String p) {
+        char[] ch = p.toCharArray();
+        int length = p.length();
+        for(int i=0; i<length;i++){
+            System.out.println("*");
+        }
+        return new String();
+    }
+
     public void display()
     {
         System.out.println("Owner's Id : "+ Id);
