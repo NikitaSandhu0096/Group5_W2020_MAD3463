@@ -4,14 +4,6 @@ import com.lambton.IDisplay;
 
 import java.util.HashMap;
 
-enum vehicleIsSelfDrive {
-    YES,
-    NO
-}
-enum vehicleIsInsured {
-    YES,
-    NO
-}
 enum vehicleFuelType{
     DIESEL,
     PETROL,
@@ -22,24 +14,24 @@ public abstract class Vehicle implements IDisplay {
 
     protected int vehicleIdentificationNumber;
     protected String vehicleDescription;
-    protected vehicleIsSelfDrive vehicleIsSelfDrive;
+    protected boolean vehicleIsSelfDrive;
     protected String vehicleManufacturerName;
     protected String vehicleDriverName;
     protected String vehicleInsuranceProviderName;
     protected int vehicleNoOfSeats;
     protected HashMap<String, Float> vehicleBaseRatePerDay = new HashMap<String, Float>();
     protected HashMap<String, Float> vehicleRatePerKm = new HashMap<String, Float>();
-    protected vehicleIsInsured vehicleIsInsured;
+    protected boolean vehicleIsInsured;
     protected vehicleFuelType vehicleFuelType;
 
 
     public  Vehicle(){
 
     }
-    public Vehicle(int vehicleIdentificationNumber,String vehicleDescription,vehicleIsSelfDrive vehicleIsSelfDrive,String vehicleManufacturerName,
+    public Vehicle(int vehicleIdentificationNumber,String vehicleDescription,boolean vehicleIsSelfDrive,String vehicleManufacturerName,
                    String vehicleDriverName, String vehicleInsuranceProviderName, int vehicleNoOfSeats,
                    HashMap<String, Float> vehicleBaseRatePerDay,
-                   HashMap<String, Float> vehicleRatePerKm,vehicleIsInsured vehicleIsInsured,vehicleFuelType vehicleFuelType)
+                   HashMap<String, Float> vehicleRatePerKm,boolean vehicleIsInsured,vehicleFuelType vehicleFuelType)
     {
         this.vehicleIdentificationNumber=vehicleIdentificationNumber;
         this.vehicleDescription=vehicleDescription;

@@ -15,9 +15,9 @@ public  class Car extends Vehicle implements IDisplay
     {
         super();
     }
-    public  Car(String carType,ArrayList<String> carColor,int vehicleIdentificationNumber,String vehicleDescription,vehicleIsSelfDrive vehicleIsSelfDrive,
+    public  Car(String carType,ArrayList<String> carColor,int vehicleIdentificationNumber,String vehicleDescription,boolean vehicleIsSelfDrive,
                 String vehicleManufacturerName,String vehicleDriverName, String vehicleInsuranceProviderName, int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRatePerDay,
-                HashMap<String, Float> vehicleRatePerKm,vehicleIsInsured vehicleIsInsured,vehicleFuelType vehicleFuelType)
+                HashMap<String, Float> vehicleRatePerKm,boolean vehicleIsInsured,vehicleFuelType vehicleFuelType)
     {
         super(vehicleIdentificationNumber,vehicleDescription,vehicleIsSelfDrive,
                 vehicleManufacturerName,vehicleDriverName,vehicleInsuranceProviderName,
