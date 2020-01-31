@@ -2,14 +2,9 @@ package com.lambton.person;
 
 import java.time.LocalDate;
 
-enum IsDrivingHistoryCleared {
-    YES,
-    NO
-}
-
 public class Driver extends Person {
     private String drivingLicenceNumber;
-    private IsDrivingHistoryCleared isDrivingHistoryCleared;
+    private boolean isDrivingHistoryCleared;
     private float salary;
 
     public Driver(){
@@ -18,7 +13,7 @@ public class Driver extends Person {
 
     public Driver(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
                    int mobileNumber, String emailId, String userName, String password,
-                   String drivingLicenceNumber, IsDrivingHistoryCleared isDrivingHistoryCleared,float salary){
+                   String drivingLicenceNumber, boolean isDrivingHistoryCleared,float salary){
         super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
         this.drivingLicenceNumber = drivingLicenceNumber;
         this.isDrivingHistoryCleared = isDrivingHistoryCleared;
@@ -33,15 +28,15 @@ public class Driver extends Person {
         this.drivingLicenceNumber = drivingLicenceNumber;
     }
 
-    public IsDrivingHistoryCleared getIsDrivingHistoryCleared() {
+    public boolean isDrivingHistoryCleared() {
         return isDrivingHistoryCleared;
     }
 
-    public void setIsDrivingHistoryCleared(IsDrivingHistoryCleared isDrivingHistoryCleared) {
-        this.isDrivingHistoryCleared = isDrivingHistoryCleared;
+    public void setDrivingHistoryCleared(boolean drivingHistoryCleared) {
+        isDrivingHistoryCleared = drivingHistoryCleared;
     }
 
-    public float getsalary() {
+    public float getSalary() {
         return salary;
     }
 
