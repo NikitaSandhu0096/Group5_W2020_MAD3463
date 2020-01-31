@@ -34,6 +34,7 @@ public class VehicleRent implements IDisplay {
     }
 
     private float calculateTotalBillToPay() {
+        totalBillToPay = rentInNoOfDays+(noOfKmDrived*v.getVehicleRatePerKm().get(vehicle));
         return totalBillToPay;
     }
 
