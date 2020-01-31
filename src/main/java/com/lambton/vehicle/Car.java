@@ -52,19 +52,19 @@ public  class Car extends Vehicle implements IDisplay
     @Override
         public void display()
         {
-            System.out.println("VehicleIdentificationNumber" + vehicleIdentificationNumber);
-            System.out.println("vehicleDescription"+vehicleDescription);
-            System.out.println("vehicleIsSelfDrive"+vehicleIsSelfDrive);
-            System.out.println("vehicleManufacturerName"+vehicleManufacturerName);
-            System.out.println("vehicleDriverName"+vehicleDriverName);
-            System.out.println("vehicleInsuranceProviderName"+vehicleInsuranceProviderName);
-            System.out.println("vehicleNoOfSeats"+vehicleNoOfSeats);
-            System.out.println("vehicleBaseRate"+vehicleBaseRatePerDay);
-            System.out.println("vehicleRatePerKm"+vehicleRatePerKm);
-            System.out.println("vehicleIsInsured"+vehicleIsInsured);
-            System.out.println("vehicleFuelType"+vehicleFuelType);
-            System.out.println("carType"+carType);
-            System.out.println("Car_Color"+carColor);
+            System.out.println("Car's Identification Number : " + vehicleIdentificationNumber);
+            System.out.println("Car's Description : "+vehicleDescription);
+            System.out.println("Car's is self driving : "+vehicleIsSelfDrive);
+            System.out.println("Car's Manufacturer's name : "+vehicleManufacturerName);
+            System.out.println("Car's Driver Name : "+vehicleDriverName);
+            System.out.println("Car's Insurance Provider's Name : "+vehicleInsuranceProviderName);
+            System.out.println("Car's no. of seats : "+vehicleNoOfSeats);
+            System.out.println("Car's Base Rate Per Day : "+vehicleBaseRatePerDay);
+            System.out.println("Car's Rate per Hour : "+vehicleRatePerKm);
+            System.out.println("Car's is Insured? : "+vehicleIsInsured);
+            System.out.println("Car's Fuel Type : "+vehicleFuelType);
+            System.out.println("Car's Type : "+carType);
+            System.out.println("Car's Color : "+carColor);
         }
 
 }
