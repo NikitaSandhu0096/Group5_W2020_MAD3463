@@ -38,7 +38,6 @@ public class VehicleRent implements IDisplay {
         return totalBillToPay;
     }
 
-
     @Override
     public void display()
     {

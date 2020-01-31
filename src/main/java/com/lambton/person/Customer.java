@@ -1,12 +1,15 @@
 package com.lambton.person;
 
+import com.lambton.VehicleRent;
+
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Customer extends Person
 {
     private String address;
     private String city;
-    //private VehicleRent;
+    ArrayList<VehicleRent> vehicleRent = new ArrayList<>();
 
     public Customer(){
         super();
