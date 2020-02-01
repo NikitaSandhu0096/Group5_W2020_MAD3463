@@ -15,17 +15,6 @@ public  class Car extends Vehicle implements IDisplay
     {
         super();
     }
-    public  Car(ArrayList<String> carType,ArrayList<String> carColor,int vehicleIdentificationNumber,String vehicleDescription,boolean vehicleIsSelfDrive,
-                String vehicleManufacturerName,String vehicleDriverName, String vehicleInsuranceProviderName, int vehicleNoOfSeats, HashMap<String, Float> vehicleBaseRatePerDay,
-                HashMap<String, Float> vehicleRatePerKm,boolean vehicleIsInsured,vehicleFuelType vehicleFuelType)
-    {
-        super(vehicleIdentificationNumber,vehicleDescription,vehicleIsSelfDrive,
-                vehicleManufacturerName,vehicleDriverName,vehicleInsuranceProviderName,
-                vehicleNoOfSeats,vehicleBaseRatePerDay,vehicleRatePerKm,vehicleIsInsured,vehicleFuelType);
-        this.carType = carType;
-        this.carColor = carColor;
-    }
-
 
     public ArrayList<String> getCarType() {
         return carType;
@@ -50,19 +39,12 @@ public  class Car extends Vehicle implements IDisplay
     @Override
         public void display()
         {
-            System.out.println("Car's Identification Number : " + vehicleIdentificationNumber);
-            System.out.println("Car's Description : "+vehicleDescription);
-            System.out.println("Car's is self driving : "+vehicleIsSelfDrive);
-            System.out.println("Car's Manufacturer's name : "+vehicleManufacturerName);
-            System.out.println("Car's Driver Name : "+vehicleDriverName);
-            System.out.println("Car's Insurance Provider's Name : "+vehicleInsuranceProviderName);
-            System.out.println("Car's no. of seats : "+vehicleNoOfSeats);
-            System.out.println("Car's Base Rate Per Day : "+vehicleBaseRatePerDay);
-            System.out.println("Car's Rate per Hour : "+vehicleRatePerKm);
-            System.out.println("Car's is Insured? : "+vehicleIsInsured);
-            System.out.println("Car's Fuel Type : "+vehicleFuelType);
-            System.out.println("Car's Type : "+carType);
-            System.out.println("Car's Color : "+carColor);
+            System.out.println("Car [carType=" + carType + ", carColor=" + carColor + ", identificationNumber="
+                    + getIdentificationNumber() + ", description=" + getDescription() + ", selfDrive=" + isSelfDrive()
+                    + ", manufacturerName=" + getManufacturerName() + ", isInsured=" + isInsured() + ", vehicleNoOfSeats="
+                    + getVehicleNoOfSeats() + ", insuranceProviderName=" + getInsuranceProviderName() + ", seat="
+                    + getSeat() + ", fuelType=" + getFuelType() + ", ratePerDay=" + getRatePerDay() + ", ratePerKm="
+                    + getRatePerKm() + "]");
         }
 
 }
