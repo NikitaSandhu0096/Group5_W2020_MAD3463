@@ -46,5 +46,4 @@ public  class Car extends Vehicle implements IDisplay
                     + getSeat() + ", fuelType=" + getFuelType() + ", ratePerDay=" + getRatePerDay() + ", ratePerKm="
                     + getRatePerKm() + "]");
         }
-
 }
