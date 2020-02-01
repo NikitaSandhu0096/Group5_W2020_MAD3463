@@ -58,15 +58,6 @@ public class Owner extends Person {
         this.vehicleListOwned = vehicleListOwned;
     }
 
-    @Override
-    public int calculatePersonAge(){
-        int age;
-        LocalDate today = LocalDate.now();
-        age = today.getYear() - birthDate.getYear();
-
-        return age;
-    }
-
     public void display()
     {
         System.out.println("Owner's Id : "+ Id);

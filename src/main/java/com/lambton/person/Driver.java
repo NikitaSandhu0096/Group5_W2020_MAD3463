@@ -47,15 +47,6 @@ public class Driver extends Person {
         this.salary = salary;
     }
 
-    @Override
-    public int calculatePersonAge() {
-        int age;
-        LocalDate today = LocalDate.now();
-        age = today.getYear() - birthDate.getYear();
-
-        return age;
-    }
-
     public void display()
     {
         System.out.println("Driver's Id : "+ Id);
