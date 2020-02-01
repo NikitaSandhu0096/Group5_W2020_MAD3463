@@ -5,19 +5,21 @@ import com.lambton.vehicle.Vehicle;
 import java.time.LocalDate;
 
 public class VehicleRent implements IDisplay {
-    Vehicle v;
+    Vehicle vehicle;
     LocalDate rentStartDate;
     LocalDate rentEndDate;
     float  rentInNoOfDays;
-    String vehicle;
+    //String vehicle;
     float noOfKmDrived;
     float totalBillToPay;
+    int vehicleType;
 
     public VehicleRent(LocalDate rentStartDate, LocalDate rentEndDate, int rentInNoOfDays, String vehicle, float noOfKmDrived, float totalBillToPay) {
+
         this.rentStartDate = rentStartDate;
         this.rentEndDate = rentEndDate;
         this.rentInNoOfDays = calculateRentInNoOfDays();
-        this.vehicle = vehicle;
+        //this.vehicle = vehicle;
         this.noOfKmDrived = noOfKmDrived;
         this.totalBillToPay = calculateTotalBillToPay();
     }
@@ -25,13 +27,13 @@ public class VehicleRent implements IDisplay {
     private float calculateRentInNoOfDays() {
         LocalDate s1 = rentStartDate;
         LocalDate s2 = rentEndDate;
-        rentInNoOfDays = (float) ((s2.getDayOfMonth() - s1.getDayOfMonth()) * v.getRatePerDay());
+        rentInNoOfDays = (float) ((s2.getDayOfMonth() - s1.getDayOfMonth()) * vehicle.getRatePerDay());
 
         return rentInNoOfDays;
     }
 
     private float calculateTotalBillToPay() {
-        totalBillToPay = (float) (rentInNoOfDays+(noOfKmDrived*v.getRatePerKm()));
+        totalBillToPay = (float) (rentInNoOfDays+(noOfKmDrived*vehicle.getRatePerKm()));
 
         return totalBillToPay;
     }
@@ -39,11 +41,18 @@ public class VehicleRent implements IDisplay {
     @Override
     public void display()
     {
-        System.out.println("Vehicle's Rent Start Date : "+ rentStartDate);
-        System.out.println("Vehicle's Rent End Date : "+ rentEndDate);
-        System.out.println("Vehicle's Rent in number of days : "+ rentInNoOfDays);
-        System.out.println("Vehicle's type : "+ vehicle);
-        System.out.println("Vehicle's number of kilometers drived : "+ noOfKmDrived);
-        System.out.println("Vehicle's total bill to pay : "+ totalBillToPay);
+    }
+
+    @Override
+    public String toString() {
+        return "VehicleRent{" +
+                "vehicle=" + vehicle +
+                ", rentStartDate=" + rentStartDate +
+                ", rentEndDate=" + rentEndDate +
+                ", rentInNoOfDays=" + rentInNoOfDays +
+                ", noOfKmDrived=" + noOfKmDrived +
+                ", totalBillToPay=" + totalBillToPay +
+                ", vehicleType=" + vehicleType +
+                '}';
     }
 }
