@@ -1,6 +1,7 @@
 package com.lambton.vehicle;
 
 import com.lambton.IDisplay;
+import com.lambton.person.Driver;
 
 import java.util.HashMap;
 
@@ -12,86 +13,62 @@ enum vehicleFuelType{
 
 public abstract class Vehicle implements IDisplay {
 
-    protected int vehicleIdentificationNumber;
-    protected String vehicleDescription;
-    protected boolean vehicleIsSelfDrive;
-    protected String vehicleManufacturerName;
-    protected String vehicleDriverName;
-    protected String vehicleInsuranceProviderName;
-    protected int vehicleNoOfSeats;
-    protected HashMap<String, Float> vehicleBaseRatePerDay = new HashMap<String, Float>();
-    protected HashMap<String, Float> vehicleRatePerKm = new HashMap<String, Float>();
-    protected boolean vehicleIsInsured;
-    protected vehicleFuelType vehicleFuelType;
+    private String identificationNumber;
+    private String description;
+    private boolean isSelfDrive;
+    private String manufacturerName;
+    private boolean isInsured;
+    private int vehicleNoOfSeats;
+    private String insuranceProviderName;
+    private int seat;
+    private String fuelType;
+    private double ratePerDay;
+    private double ratePerKm;
+    private Driver driver;
 
-
-    public  Vehicle(){
-
-    }
-    public Vehicle(int vehicleIdentificationNumber,String vehicleDescription,boolean vehicleIsSelfDrive,String vehicleManufacturerName,
-                   String vehicleDriverName, String vehicleInsuranceProviderName, int vehicleNoOfSeats,
-                   HashMap<String, Float> vehicleBaseRatePerDay,
-                   HashMap<String, Float> vehicleRatePerKm,boolean vehicleIsInsured,vehicleFuelType vehicleFuelType)
-    {
-        this.vehicleIdentificationNumber=vehicleIdentificationNumber;
-        this.vehicleDescription=vehicleDescription;
-        this.vehicleIsSelfDrive=vehicleIsSelfDrive;
-        this.vehicleManufacturerName=vehicleManufacturerName;
-        this.vehicleDriverName=vehicleDriverName;
-        this.vehicleInsuranceProviderName=vehicleInsuranceProviderName;
-        this.vehicleNoOfSeats=vehicleNoOfSeats;
-        this.vehicleBaseRatePerDay=vehicleBaseRatePerDay;
-        this.vehicleRatePerKm=vehicleRatePerKm;
-        this.vehicleIsInsured=vehicleIsInsured;
-        this.vehicleFuelType=vehicleFuelType;
+    public Vehicle() {
+        super();
+        // TODO Auto-generated constructor stub
     }
 
-    public int getVehicleIdentificationNumber() {
-        return vehicleIdentificationNumber;
+    public String getIdentificationNumber() {
+        return identificationNumber;
     }
 
-    public void setVehicleIdentificationNumber(int vehicleIdentificationNumber) {
-        this.vehicleIdentificationNumber = vehicleIdentificationNumber;
+    public void setIdentificationNumber(String identificationNumber) {
+        this.identificationNumber = identificationNumber;
     }
 
-    public String getVehicleDescription() {
-        return vehicleDescription;
+    public String getDescription() {
+        return description;
     }
 
-    public void setVehicleDescription(String vehicleDescription) {
-        this.vehicleDescription = vehicleDescription;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public boolean isVehicleIsSelfDrive() {
-        return vehicleIsSelfDrive;
+    public boolean isSelfDrive() {
+        return isSelfDrive;
     }
 
-    public void setVehicleIsSelfDrive(boolean vehicleIsSelfDrive) {
-        this.vehicleIsSelfDrive = vehicleIsSelfDrive;
+    public void setSelfDrive(boolean isSelfDrive) {
+        this.isSelfDrive = isSelfDrive;
     }
 
-    public String getVehicleManufacturerName() {
-        return vehicleManufacturerName;
+    public String getManufacturerName() {
+        return manufacturerName;
     }
 
-    public void setVehicleManufacturerName(String vehicleManufacturerName) {
-        this.vehicleManufacturerName = vehicleManufacturerName;
+    public void setManufacturerName(String manufacturerName) {
+        this.manufacturerName = manufacturerName;
     }
 
-    public String getVehicleDriverName() {
-        return vehicleDriverName;
+    public boolean isInsured() {
+        return isInsured;
     }
 
-    public void setVehicleDriverName(String vehicleDriverName) {
-        this.vehicleDriverName = vehicleDriverName;
-    }
-
-    public String getVehicleInsuranceProviderName() {
-        return vehicleInsuranceProviderName;
-    }
-
-    public void setVehicleInsuranceProviderName(String vehicleInsuranceProviderName) {
-        this.vehicleInsuranceProviderName = vehicleInsuranceProviderName;
+    public void setInsured(boolean isInsured) {
+        this.isInsured = isInsured;
     }
 
     public int getVehicleNoOfSeats() {
@@ -102,37 +79,51 @@ public abstract class Vehicle implements IDisplay {
         this.vehicleNoOfSeats = vehicleNoOfSeats;
     }
 
-    public HashMap<String, Float> getVehicleBaseRatePerDay() {
-        return vehicleBaseRatePerDay;
+    public String getInsuranceProviderName() {
+        return insuranceProviderName;
     }
 
-    public void setVehicleBaseRatePerDay(HashMap<String, Float> vehicleBaseRatePerDay) {
-        this.vehicleBaseRatePerDay = vehicleBaseRatePerDay;
+    public void setInsuranceProviderName(String insuranceProviderName) {
+        this.insuranceProviderName = insuranceProviderName;
     }
 
-    public HashMap<String, Float> getVehicleRatePerKm() {
-        return vehicleRatePerKm;
+    public int getSeat() {
+        return seat;
     }
 
-    public void setVehicleRatePerKm(HashMap<String, Float> vehicleRatePerKm) {
-        this.vehicleRatePerKm = vehicleRatePerKm;
+    public void setSeat(int seat) {
+        this.seat = seat;
     }
 
-    public boolean isVehicleIsInsured() {
-        return vehicleIsInsured;
+    public String getFuelType() {
+        return fuelType;
     }
 
-    public void setVehicleIsInsured(boolean vehicleIsInsured) {
-        this.vehicleIsInsured = vehicleIsInsured;
+    public void setFuelType(String fuelType) {
+        this.fuelType = fuelType;
     }
 
-    public com.lambton.vehicle.vehicleFuelType getVehicleFuelType() {
-        return vehicleFuelType;
+    public double getRatePerDay() {
+        return ratePerDay;
     }
 
-    public void setVehicleFuelType(com.lambton.vehicle.vehicleFuelType vehicleFuelType) {
-        this.vehicleFuelType = vehicleFuelType;
+    public void setRatePerDay(double ratePerDay) {
+        this.ratePerDay = ratePerDay;
     }
 
+    public double getRatePerKm() {
+        return ratePerKm;
+    }
 
+    public void setRatePerKm(double ratePerKm) {
+        this.ratePerKm = ratePerKm;
+    }
+
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Driver driver) {
+        this.driver = driver;
+    }
 }
