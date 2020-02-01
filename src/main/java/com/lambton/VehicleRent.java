@@ -25,7 +25,6 @@ public class VehicleRent implements IDisplay {
     private float calculateRentInNoOfDays() {
         LocalDate s1 = rentStartDate;
         LocalDate s2 = rentEndDate;
-        int noOfDays = s2.getDayOfMonth()-s1.getDayOfMonth();
         rentInNoOfDays = (float) ((s2.getDayOfMonth() - s1.getDayOfMonth()) * v.getRatePerDay());
 
         return rentInNoOfDays;
