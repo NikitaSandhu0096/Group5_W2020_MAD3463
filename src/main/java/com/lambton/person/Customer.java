@@ -44,15 +44,6 @@ public class Customer extends Person
         this.city = city;
     }
 
-    @Override
-    public int calculatePersonAge(){
-        int age;
-        LocalDate today = LocalDate.now();
-        age = today.getYear() - birthDate.getYear();
-
-        return age;
-    }
-
     public void display()
     {
         System.out.println("Customer's Id : "+ Id);

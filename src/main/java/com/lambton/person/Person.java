@@ -44,16 +44,36 @@ public abstract class Person implements IDisplay {
         this.password = encryptPassword(password);
     }
 
-    public abstract int calculatePersonAge();
+    public int calculatePersonAge(){
+        int age;
+        LocalDate today = LocalDate.now();
+        age = today.getYear() - birthDate.getYear();
+
+        return age;
+    }
 
     public String encryptPassword(String p){
-        try{
+        try{                                            //https://stackoverflow.com/questions/23561104/how-to-encrypt-and-decrypt-string-with-my-passphrase-in-java-pc-not-mobile-plat/32583766
             String key1 = "KEY123KEY456";
             Key aesKey1 = new SecretKeySpec(key1.getBytes(),"AES");
             Cipher c1 = Cipher.getInstance("AES");
             c1.init(Cipher.ENCRYPT_MODE,aesKey1);
             byte[] encryted1 = c1.doFinal(p.getBytes());
             System.out.println(new String (encryted1));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return new String();
+    }
+
+    public String decryptPassword(String p){
+        try{                                        //https://stackoverflow.com/questions/23561104/how-to-encrypt-and-decrypt-string-with-my-passphrase-in-java-pc-not-mobile-plat/32583766
+            String key1 = "KEY123KEY456";
+            Key aesKey1 = new SecretKeySpec (key1.getBytes(),"AES");
+            Cipher c1 = Cipher.getInstance("AES");
+            c1.init(Cipher.DECRYPT_MODE,aesKey1);
+            byte[] decrypted1 = c1.doFinal(p.getBytes());
+            System.out.println(new String (decrypted1));
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -138,20 +158,5 @@ public abstract class Person implements IDisplay {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String decryptPassword(String p) {
-            try{
-                String key1 = "KEY123KEY456";
-                Key aesKey1 = new SecretKeySpec (key1.getBytes(),"AES");
-                Cipher c1 = Cipher.getInstance("AES");
-                c1.init(Cipher.DECRYPT_MODE,aesKey1);
-                String dencryted1 = new String (c1.doFinal(encrypted);
-                System.out.println(new String (dencryted1));
-            }catch (Exception e){
-                e.printStackTrace();
-            }
-            return new String();
-        }
     }
 }
