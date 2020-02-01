@@ -2,6 +2,9 @@ package com.lambton.person;
 
 import com.lambton.VehicleRent;
 
+import javax.crypto.Cipher;
+import javax.crypto.spec.SecretKeySpec;
+import java.security.Key;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -49,46 +52,6 @@ public class Customer extends Person
 
         return age;
     }
-
-    @Override
-    public String encryptPassword(String p) {
-
-            if(p.length()<2){
-                System.out.println("String only has one character");
-            }
-            else{
-                if(p.length()%2==0){
-                    char[] ch1 = p.toCharArray();
-                    int length = p.length();
-                    for(int i = 0; i<length;i+=2){
-                        char t1 = ch1[i];
-                        ch1[i] = ch1[i+1];
-                        ch1[i+1] = t1;
-                    }
-                    return new String(ch1);
-                }
-                else {
-                    char[] ch1 = p.toCharArray();
-                    int length = p.length();
-                    char t2 = ch1[length-1];
-                    for(int i = 0; i<length-1;i+=2){
-                        char t1 = ch1[i];
-                        ch1[i] = ch1[i+1];
-                        ch1[i+1] = t1;
-                    }
-
-                    for(int j =length-1; j>length/2;j--){
-                        char t3 = ch1[j];
-                        ch1[j] = ch1[j-1];
-                        ch1[j-1] = t3;
-                    }
-
-                    ch1[length/2]=t2;
-                    return new String(ch1);
-                }
-            }
-            return new String();
-        }
 
     public void display()
     {
