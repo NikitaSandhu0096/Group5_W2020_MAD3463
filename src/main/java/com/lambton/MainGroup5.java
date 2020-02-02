@@ -55,6 +55,7 @@ public class MainGroup5 implements IDisplay {
 
         Bus b5 = c.setBusDetails("3VWML7AJ9CM519278", "Assimilated eco-centric process improvement", "Toyota", false, "Nerti Maynell", true, "Jevco", 35, "Petrol", Double.valueOf(250), Double.valueOf(7), "School bus", false, true);
 
+        Car cr1 = c.setCarDetails("WBA3A5C55CF202202", "Visionary optimal neutral-net", "Scion", false, "Pepillo Kitman", false, null, 6, "Petrol", Double.valueOf(100), Double.valueOf(5), "RSX", "Yellow");
 
 
     }
