@@ -71,6 +71,8 @@ public class MainGroup5 implements IDisplay {
 
         MotorCycle mc3 = c.setMotorCycleDetails("JH4DB76611S323929", "Multi-tiered context-sensitive projection" , "BMW", false, "Robb Seton", false, null, 1, "Diesel", Double.valueOf(50),Double.valueOf(1), 65, 23);
 
+        MotorCycle mc4 = c.setMotorCycleDetails("WAUKH74F17N262385", "Secured local encryption" , "Honda", false, "Claudio Pedley", true, "Jevco", 1, "Petrol", Double.valueOf(50),Double.valueOf(1), 57, 32);
+
 
 
     }
