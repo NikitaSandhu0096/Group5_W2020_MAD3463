@@ -45,6 +45,10 @@ public class MainGroup5 implements IDisplay {
 
         VehicleRent vr5 = c.setVehicleRent("1/29/2020", "1/30/2020", "WAU4FAFL0AA424617", 61);
 
+        Bus b1 = c.setBusDetails("1N6AD0CU5BC296395", "Customer-focused bifurcated groupware", "Ford", false, "Pepillo Kitman", false, null, 48, "Petrol", Double.valueOf(250), Double.valueOf(7), "School bus", true, true);
+
+
+
 
     }
 
