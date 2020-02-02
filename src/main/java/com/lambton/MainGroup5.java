@@ -59,6 +59,8 @@ public class MainGroup5 implements IDisplay {
 
         Car cr2 = c.setCarDetails("5N1CR2MNXEC181212", "Networked background initiative", "Ford", true, null, true, "Aviva", 8, "Diesel", Double.valueOf(100), Double.valueOf(5), "Econoline E150", "Violet");
 
+        Car cr3 = c.setCarDetails("WAUUL98EX8A747315", "Reverse-engineered motivating moderator", "Buick", false, "Robb Seton", true, "Intact Insurance", 6, "Diesel", Double.valueOf(100), Double.valueOf(5), "AeroStar", "Pink");
+
 
     }
 
