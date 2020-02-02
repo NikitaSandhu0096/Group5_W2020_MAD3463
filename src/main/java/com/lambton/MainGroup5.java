@@ -35,7 +35,7 @@ public class MainGroup5 {
             System.setOut(console);
 
             MainGroup5 mg = new MainGroup5();
-            // mg.decrypt("MtFUuy14O7I=");
+            //mg.decrypt("MtFUuy14O7I=");
             mg.createOwner();
             mg.displayOwnerDetails();
             mg.createCustomer();
@@ -177,7 +177,7 @@ public class MainGroup5 {
 
     }
 
-    public void createCustomer() throws ParseException {
+    public void createCustomer() throws Exception {
 
         Customer c2 = setCustomerDetails(2, "Jerad", "Ferreres", "Male", "10/11/1985", 0, "jferreres1@ning.com",
                 "jferreres1", "0LrwRtm7stXw", "47 Maywood Hill", "Montreal", "Ontario", null);
@@ -247,7 +247,7 @@ public class MainGroup5 {
 
     public Driver setDriverDetails(int id, String firstName, String lastName, String gender, String birthDate, int age,
                                    String mobileNumber, String emailId, String userName, String password, String drivingLicenceNumber,
-                                   boolean isDrivingHistoryCleared, int salary) throws ParseException {
+                                   boolean isDrivingHistoryCleared, int salary) throws Exception {
         Driver driver = new Driver();
         LocalDate bDate = util.getDateFromString(birthDate);
         driver.setId(id);
@@ -258,7 +258,9 @@ public class MainGroup5 {
         driver.setAge(util.calculateAge(bDate));
         driver.setMobileNumber(mobileNumber);
         driver.setEmailId(emailId);
-        driver.setPassword(password);
+        String encrypted = td.encrypt(password, Constant.KEY);
+        driver.setPassword(encrypted);
+        //driver.setPassword(password);
         driver.setDrivingLicenceNumber(drivingLicenceNumber);
         driver.setDrivingHistoryCleared(isDrivingHistoryCleared);
         driver.setSalary(salary);
@@ -268,7 +270,7 @@ public class MainGroup5 {
 
     public Customer setCustomerDetails(int id, String firstName, String lastName, String gender, String birthDate,
                                        int age, String mobileNumber, String emailId, String userName, String password, String address, String city,
-                                       List<VehicleRent> vehicleRent) throws ParseException {
+                                       List<VehicleRent> vehicleRent) throws Exception {
 
         Customer customer = new Customer();
         LocalDate bDate = util.getDateFromString(birthDate);
@@ -280,7 +282,9 @@ public class MainGroup5 {
         customer.setAge(util.calculateAge(bDate));
         customer.setMobileNumber(mobileNumber);
         customer.setEmailId(emailId);
-        customer.setPassword(password);
+        String encrypted = td.encrypt(password, Constant.KEY);
+        customer.setPassword(encrypted);
+        //customer.setPassword(password);
         customer.setAddress(address);
         customer.setCity(city);
         return customer;
