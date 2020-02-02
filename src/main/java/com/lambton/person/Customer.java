@@ -16,7 +16,6 @@ public class Customer extends Person
     private String city;
     ArrayList<VehicleRent> vehicleRent = new ArrayList<>();
 
-
     public Customer(){
         super();
     }
