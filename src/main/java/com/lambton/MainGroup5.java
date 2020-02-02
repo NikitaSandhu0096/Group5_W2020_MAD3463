@@ -65,7 +65,8 @@ public class MainGroup5 implements IDisplay {
 
         Car cr5 = c.setCarDetails("WAU4FAFL0AA424617", "Persistent fault-tolerant focus group", "Suzuki", true, null, false, null, 7, "Petrol", Double.valueOf(100), Double.valueOf(5), "Ghost", "Crimson");
 
-        
+        MotorCycle mc1 = c.setMotorCycleDetails("WBA3B9C51DJ591682", "Right-sized 24/7 projection" , "Harley Davidson", false, "Pepillo Kitman", false, null, 1, "Petrol", Double.valueOf(50),Double.valueOf(1), 71, 41);
+
 
 
     }
