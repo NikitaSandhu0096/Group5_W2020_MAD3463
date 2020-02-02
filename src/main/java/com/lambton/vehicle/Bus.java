@@ -1,10 +1,5 @@
 package com.lambton.vehicle;
 
-import com.lambton.IDisplay;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-
 public class Bus extends Vehicle {
     private String busType;
     private boolean iswifiAvailable;
@@ -40,6 +35,8 @@ public class Bus extends Vehicle {
 
     @Override
     public void display() {
+        System.out.println("********************Displaying Bus Details********************");
+
         System.out.println("Bus [busType=" + busType + ", iswifiAvailable=" + iswifiAvailable + ", isAccessibiltyServiceAvailable="
                 + isAccessibiltyServiceAvailable + ", identificationNumber=" + getIdentificationNumber()
                 + ", description=" + getDescription() + ", selfDrive=" + isSelfDrive()
