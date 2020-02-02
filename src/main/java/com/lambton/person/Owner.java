@@ -1,78 +1,71 @@
 package com.lambton.person;
 
+import com.lambton.vehicle.Vehicle;
+
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 import java.security.Key;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Owner extends Person {
     private String companyTitle;
-    private int businessLandLineNumber;
+    private String businessLandLineNumber;
     private String website;
-    private ArrayList<String> vehicleListOwned = new ArrayList<>();
+    private List<Vehicle> vehicles;
 
-    public Owner(){
+    public Owner() {
         super();
-    }
-
-    public Owner(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
-                   int mobileNumber, String emailId, String userName, String password,
-                   String companyTitle, int businessLandLineNumber, String website, ArrayList<String> vehicleListOwned){
-        super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
-        this.companyTitle = companyTitle;
-        this.businessLandLineNumber = businessLandLineNumber;
-        this.website = website;
-        this.vehicleListOwned = vehicleListOwned;
+        // TODO Auto-generated constructor stub
     }
 
     public String getCompanyTitle() {
         return companyTitle;
     }
-
     public void setCompanyTitle(String companyTitle) {
         this.companyTitle = companyTitle;
     }
-
-    public int getBusinessLandLineNumber() {
+    public String getBusinessLandLineNumber() {
         return businessLandLineNumber;
     }
-
-    public void setBusinessLandLineNumber(int businessLandLineNumber) {
+    public void setBusinessLandLineNumber(String businessLandLineNumber) {
         this.businessLandLineNumber = businessLandLineNumber;
     }
-
     public String getWebsite() {
         return website;
     }
-
     public void setWebsite(String website) {
         this.website = website;
     }
-
-    public ArrayList<String> getVehicleListOwned() {
-        return vehicleListOwned;
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
+    public void setVehicles(List<Vehicle> vehicles) {
+        this.vehicles = vehicles;
     }
 
-    public void setVehicleListOwned(ArrayList<String> vehicleListOwned) {
-        this.vehicleListOwned = vehicleListOwned;
+    @Override
+    public String toString() {
+        return "Owner [companyTitle=" + companyTitle + ", businessLandLineNumber=" + businessLandLineNumber
+                + ", website=" + website + ", vehicles=" + vehicles + ", id=" + getId() + ", firstName()="
+                + getFirstName() + ", lastName()=" + getLastName() + ", gender()=" + getGender()
+                + ", birthDate()=" + getBirthDate() + ", age()=" + getAge() + ", mobileNumber()="
+                + getMobileNumber() + ", emailId()=" + getEmailId() + ", userName()=" + getUserName()
+                + ", password()=" + getPassword() +  "]";
     }
 
-    public void display()
-    {
-        System.out.println("Owner's Id : "+ Id);
-        System.out.println("Owner's First Name : "+ firstName);
-        System.out.println("Owner's Last Name : "+ lastName);
-        System.out.println("Owner's Gender : "+ gender);
-        System.out.println("Owner's Birth Date : "+ birthDate);
-        System.out.println("Owner's Age : "+ age);
-        System.out.println("Owner's Mobile Number : "+ mobileNumber);
-        System.out.println("Owner's email Id : "+ emailId);
-        System.out.println("Owner's User Name : "+ userName);
-        System.out.println("Owner's Password : "+ password);
-        System.out.println("Owner's Company Title : "+ companyTitle);
-        System.out.println("Owner's Business and Landline Number : "+ businessLandLineNumber);
-        System.out.println("Owner's website : "+website);
-        System.out.println("Owner's Vehicle List Owned: "+vehicleListOwned);
+
+    @Override
+    public void display() {
+        System.out.println("********************Displaying Owner Details********************");
+
+        System.out.println("Owner [companyTitle=" + companyTitle + ", businessLandLineNumber=" + businessLandLineNumber
+                + ", website=" + website + ", id=" + getId() + ", firstName="
+                + getFirstName() + ", lastName=" + getLastName() + ", gender=" + getGender()
+                + ", birthDate=" + getBirthDate() + ", age=" + getAge() + ", mobileNumber="
+                + getMobileNumber() + ", emailId=" + getEmailId() + ", userName=" + getUserName()
+                + ", password=" + getPassword() +  "]");
+
     }
 }

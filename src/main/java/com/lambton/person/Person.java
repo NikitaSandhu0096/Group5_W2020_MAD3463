@@ -7,78 +7,44 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.Key;
 import java.time.LocalDate;
 
-enum Gender {
-    MALE,
-    FEMALE,
-    OTHER
-}
+//enum Gender {
+//    MALE,
+ //   FEMALE,
+ //   OTHER
+//}
 
 public abstract class Person implements IDisplay {
-    protected int Id;
-    protected String firstName;
-    protected String lastName;
-    protected Gender gender;
-    protected LocalDate birthDate;
-    protected int age;
-    protected int mobileNumber;
-    protected String emailId;
-    protected String userName;
-    protected String password;
+    private int Id;
+    private String firstName;
+    private String lastName;
+    private String gender;
+    private LocalDate birthDate;
+    private int age;
+    private String mobileNumber;
+    private String emailId;
+    private String userName;
+    private String password;
 
     public Person() {
+        super();
     }
 
-    public abstract void display();
-
-    public Person(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
-                  int mobileNumber, String emailId, String userName,String password){
-        this.Id = Id;
+    public Person(int id, String firstName, String lastName, String gender, LocalDate birthDate, int age, String mobileNumber,
+                  String emailId, String userName, String password) {
+        super();
+        Id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
         this.birthDate = birthDate;
-        this.age = calculatePersonAge();
+        this.age = age;
         this.mobileNumber = mobileNumber;
         this.emailId = emailId;
         this.userName = userName;
-        this.password = encryptPassword(password);
+        this.password = password;
     }
 
-    public int calculatePersonAge(){
-        int age;
-        LocalDate today = LocalDate.now();
-        age = today.getYear() - birthDate.getYear();
 
-        return age;
-    }
-
-    public String encryptPassword(String p){
-        try{                                            //https://stackoverflow.com/questions/23561104/how-to-encrypt-and-decrypt-string-with-my-passphrase-in-java-pc-not-mobile-plat/32583766
-            String key1 = "KEY123KEY456";
-            Key aesKey1 = new SecretKeySpec(key1.getBytes(),"AES");
-            Cipher c1 = Cipher.getInstance("AES");
-            c1.init(Cipher.ENCRYPT_MODE,aesKey1);
-            byte[] encryted1 = c1.doFinal(p.getBytes());
-            System.out.println(new String (encryted1));
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return new String();
-    }
-
-    public String decryptPassword(String p){
-        try{                                        //https://stackoverflow.com/questions/23561104/how-to-encrypt-and-decrypt-string-with-my-passphrase-in-java-pc-not-mobile-plat/32583766
-            String key1 = "KEY123KEY456";
-            Key aesKey1 = new SecretKeySpec (key1.getBytes(),"AES");
-            Cipher c1 = Cipher.getInstance("AES");
-            c1.init(Cipher.DECRYPT_MODE,aesKey1);
-            byte[] decrypted1 = c1.doFinal(p.getBytes());
-            System.out.println(new String (decrypted1));
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return new String();
-    }
 
     public int getId() {
         return Id;
@@ -104,11 +70,11 @@ public abstract class Person implements IDisplay {
         this.lastName = lastName;
     }
 
-    public Gender getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -128,11 +94,11 @@ public abstract class Person implements IDisplay {
         this.age = age;
     }
 
-    public int getMobileNumber() {
+    public String getMobileNumber() {
         return mobileNumber;
     }
 
-    public void setMobileNumber(int mobileNumber) {
+    public void setMobileNumber(String mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
 
@@ -153,10 +119,20 @@ public abstract class Person implements IDisplay {
     }
 
     public String getPassword() {
-        return decryptPassword(password);
+        return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
     }
+
+
+
+    @Override
+    public String toString() {
+        return "Person [Id=" + Id + ", firstName=" + firstName + ", lastName=" + lastName + ", gender=" + gender
+                + ", birthDate=" + birthDate + ", age=" + age + ", mobileNumber=" + mobileNumber + ", emailId="
+                + emailId + ", userName=" + userName + ", password=" + password + "]";
+    }
+
 }
