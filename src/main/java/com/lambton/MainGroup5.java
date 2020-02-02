@@ -47,6 +47,7 @@ public class MainGroup5 implements IDisplay {
 
         Bus b1 = c.setBusDetails("1N6AD0CU5BC296395", "Customer-focused bifurcated groupware", "Ford", false, "Pepillo Kitman", false, null, 48, "Petrol", Double.valueOf(250), Double.valueOf(7), "School bus", true, true);
 
+        Bus b2 = c.setBusDetails("1GD01XEG5FZ726187", "Focused actuating help-desk", "Chevrolet", false, "Claudio Pedley", true, "Aviva", 40, "Diesel", Double.valueOf(250), Double.valueOf(7), "Coach", true, false);
 
 
 
