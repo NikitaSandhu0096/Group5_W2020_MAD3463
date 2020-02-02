@@ -25,6 +25,16 @@ public class MainGroup5 implements IDisplay {
 
         Customer c5 = c.setCustomerDetails(5,"Gerhard" , "Baile", "Male", "10/29/1999", "4078983814", "harnoll7@constantcontact.com", "ob7IKoJheb", "citry", "080 Forster Parkway", "Edmonton", null);
 
+        Driver d1 = c.setDriverDetails(1,"Pepillo" , "Kitman", "Male", "8/25/1997", "(307) 8389817", "pkitman0@reuters.com", "pkitman0", "FUYGNBaggBD7", "C1273-6361-2413", true, 99988);
+
+        Driver d2 = c.setDriverDetails(2,"Claudio" , "Pedley", "Male", "5/6/1995", "(865) 1017004", "cpedley1@unc.edu", "cpedley1", "xGN14vfkHll", "U3599-0371-8768", false, 33525);
+
+        Driver d3 = c.setDriverDetails(3,"Nerti" , "Maynell", "Female", "3/4/1994", "(347) 3808054", "nmaynell2@yandex.ru", "nmaynell2", "0WDTAu0r5NF", "R1313-8499-5445", true, 52392);
+
+        Driver d4 = c.setDriverDetails(4,"Raynor" , "Stimpson", "Male", "9/3/1992", "(912) 5278838", "rstimpson3@mozilla.com", "rstimpson3", "TALT66zFc", "M6855-0303-0360", true, 66906);
+
+        Driver d5 = c.setDriverDetails(5,"Robb" , "Seton", "Male", "11/3/1990", "(110) 9340421", "rseton4@alibaba.com", "rseton4", "W4j2wkmAjex", "X1059-2321-6215", true, 74000);
+
 
     }
 
