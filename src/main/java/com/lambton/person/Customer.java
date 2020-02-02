@@ -7,6 +7,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.Key;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Customer extends Person
 {
@@ -14,7 +15,7 @@ public class Customer extends Person
 
     private String address;
     private String city;
-    ArrayList<VehicleRent> vehicleRent = new ArrayList<>();
+    List<VehicleRent> vehicleRent;
 
     public Customer(){
         super();
@@ -42,21 +43,23 @@ public class Customer extends Person
     public void setCity(String city) {
         this.city = city;
     }
+    public List<VehicleRent> getVehicleRent() {
+        return vehicleRent;
+    }
 
-    public void display()
-    {
-        System.out.println("Customer's Id : "+ Id);
-        System.out.println("Customer's First Name : "+ firstName);
-        System.out.println("Customer's Last Name : "+ lastName);
-        System.out.println("Customer's Gender : "+ gender);
-        System.out.println("Customer's Birth Date : "+ birthDate);
-        System.out.println("Customer's Age : "+ age);
-        System.out.println("Customer's Mobile Number : "+ mobileNumber);
-        System.out.println("Customer's email Id : "+ emailId);
-        System.out.println("Customer's User Name : "+ userName);
-        System.out.println("Customer's Password : "+ password);
-        System.out.println("Customer's Address : "+ address);
-        System.out.println("Customer's City : "+ city);
+    public void setVehicleRent(List<VehicleRent> vehicleRent) {
+        this.vehicleRent = vehicleRent;
+    }
+
+    @Override
+    public void display() {
+        System.out.println("********************Displaying Customer Details********************");
+        System.out.println("Customer [address=" + address + ", city=" + city + ", id="
+                + getId() + ", firstName=" + getFirstName() + ", lastName=" + getLastName() + ", gender="
+                + getGender() + ", birthDate=" + getBirthDate() + ", age=" + getAge() + ", mobileNumber="
+                + getMobileNumber() + ", emailId=" + getEmailId() + ", userName=" + getUserName() + ", password="
+                + getPassword() + "]");
+
     }
 
 
