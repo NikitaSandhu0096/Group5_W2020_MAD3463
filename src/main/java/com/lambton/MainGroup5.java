@@ -35,6 +35,16 @@ public class MainGroup5 implements IDisplay {
 
         Driver d5 = c.setDriverDetails(5,"Robb" , "Seton", "Male", "11/3/1990", "(110) 9340421", "rseton4@alibaba.com", "rseton4", "W4j2wkmAjex", "X1059-2321-6215", true, 74000);
 
+        VehicleRent vr1 = c.setVehicleRent("12/6/2019", "12/11/2019", "1N6AD0CU5BC296395", 36);
+
+        VehicleRent vr2 = c.setVehicleRent("12/16/2019", "12/17/2019", "WBA3A5C55CF202202", 100);
+
+        VehicleRent vr3 = c.setVehicleRent("1/6/2020", "1/12/2020", "WBA3B9C51DJ591682", 66);
+
+        VehicleRent vr4 = c.setVehicleRent("1/20/2020", "1/27/2020", "WAUUL98EX8A747315", 45);
+
+        VehicleRent vr5 = c.setVehicleRent("1/29/2020", "1/30/2020", "WAU4FAFL0AA424617", 61);
+
 
     }
 
