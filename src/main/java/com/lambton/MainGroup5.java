@@ -51,6 +51,8 @@ public class MainGroup5 implements IDisplay {
 
         Bus b3 = c.setBusDetails("3N1CN7AP4DL356756", "Enhanced tertiary Graphical User Interface", "Ford", true, null, true,"Intact Insurance", 30, "Diesel", Double.valueOf(250), Double.valueOf(7), "Double-decker", false, false);
 
+        Bus b4 = c.setBusDetails("1G4HC5EM9BU946298", "Devolved directional firmware", "Nissan", false, "Raynor Stimpson", true, "Aviva", 32, "Petrol", Double.valueOf(250), Double.valueOf(7), "Mini-bus", true, true);
+
 
 
     }
