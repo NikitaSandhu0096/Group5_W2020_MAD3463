@@ -2,30 +2,17 @@ package com.lambton.person;
 
 import com.lambton.VehicleRent;
 
-import javax.crypto.Cipher;
-import javax.crypto.spec.SecretKeySpec;
-import java.security.Key;
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
-public class Customer extends Person
-{
-    VehicleRent vr;
+public class Customer extends Person {
 
     private String address;
     private String city;
     List<VehicleRent> vehicleRent;
 
-    public Customer(){
+    public Customer() {
         super();
-    }
-
-    public Customer(int Id, String firstName, String lastName, Gender gender, LocalDate birthDate,
-                    int mobileNumber, String emailId, String userName, String password, String address, String city){
-        super(Id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, password);
-        this.address = address;
-        this.city = city;
+        // TODO Auto-generated constructor stub
     }
 
     public String getAddress() {
@@ -43,6 +30,7 @@ public class Customer extends Person
     public void setCity(String city) {
         this.city = city;
     }
+
     public List<VehicleRent> getVehicleRent() {
         return vehicleRent;
     }
@@ -50,6 +38,7 @@ public class Customer extends Person
     public void setVehicleRent(List<VehicleRent> vehicleRent) {
         this.vehicleRent = vehicleRent;
     }
+
 
     @Override
     public void display() {
@@ -61,6 +50,4 @@ public class Customer extends Person
                 + getPassword() + "]");
 
     }
-
-
 }

@@ -5,11 +5,11 @@ import com.lambton.person.Driver;
 
 import java.util.HashMap;
 
-enum vehicleFuelType{
-    DIESEL,
-    PETROL,
-    ELECTRIC
-}
+//enum vehicleFuelType{
+//    DIESEL,
+//    PETROL,
+//    ELECTRIC
+//}
 
 public abstract class Vehicle implements IDisplay {
 
