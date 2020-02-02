@@ -67,6 +67,8 @@ public class MainGroup5 implements IDisplay {
 
         MotorCycle mc1 = c.setMotorCycleDetails("WBA3B9C51DJ591682", "Right-sized 24/7 projection" , "Harley Davidson", false, "Pepillo Kitman", false, null, 1, "Petrol", Double.valueOf(50),Double.valueOf(1), 71, 41);
 
+        MotorCycle mc2 = c.setMotorCycleDetails("WBAVB13506K975623", "Multi-lateral needs-based superstructure" , "Ducati", true, null, true, "Aviva", 2,  "Diesel", Double.valueOf(50),Double.valueOf(1), 59, 36);
+
 
 
     }
