@@ -63,21 +63,7 @@ public class MainGroup5 implements IDisplay {
 
         Car cr4 = c.setCarDetails("ZHWGU5BZ0CL457896", "Multi-lateral content-based customer loyalty", "Ford", true, null, false, null, 8, "Petrol", Double.valueOf(100), Double.valueOf(5), "Esteem", "Mauv");
 
-        Bus b2 = c.setBusDetails("1GD01XEG5FZ726187", "Focused actuating help-desk", "Chevrolet", false, "Claudio Pedley", true, "Aviva", 40, "Diesel", Double.valueOf(250), Double.valueOf(7), "Coach", true, false);
-
-        Bus b3 = c.setBusDetails("3N1CN7AP4DL356756", "Enhanced tertiary Graphical User Interface", "Ford", true, null, true,"Intact Insurance", 30, "Diesel", Double.valueOf(250), Double.valueOf(7), "Double-decker", false, false);
-
-        Bus b4 = c.setBusDetails("1G4HC5EM9BU946298", "Devolved directional firmware", "Nissan", false, "Raynor Stimpson", true, "Aviva", 32, "Petrol", Double.valueOf(250), Double.valueOf(7), "Mini-bus", true, true);
-
-        Bus b5 = c.setBusDetails("3VWML7AJ9CM519278", "Assimilated eco-centric process improvement", "Toyota", false, "Nerti Maynell", true, "Jevco", 35, "Petrol", Double.valueOf(250), Double.valueOf(7), "School bus", false, true);
-
-        Car cr1 = c.setCarDetails("WBA3A5C55CF202202", "Visionary optimal neutral-net", "Scion", false, "Pepillo Kitman", false, null, 6, "Petrol", Double.valueOf(100), Double.valueOf(5), "RSX", "Yellow");
-
-        Car cr2 = c.setCarDetails("5N1CR2MNXEC181212", "Networked background initiative", "Ford", true, null, true, "Aviva", 8, "Diesel", Double.valueOf(100), Double.valueOf(5), "Econoline E150", "Violet");
-
-        Car cr3 = c.setCarDetails("WAUUL98EX8A747315", "Reverse-engineered motivating moderator", "Buick", false, "Robb Seton", true, "Intact Insurance", 6, "Diesel", Double.valueOf(100), Double.valueOf(5), "AeroStar", "Pink");
-
-        Car cr4 = c.setCarDetails("ZHWGU5BZ0CL457896", "Multi-lateral content-based customer loyalty", "Ford", true, null, false, null, 8, "Petrol", Double.valueOf(100), Double.valueOf(5), "Esteem", "Mauv");
+        Car cr5 = c.setCarDetails("WAU4FAFL0AA424617", "Persistent fault-tolerant focus group", "Suzuki", true, null, false, null, 7, "Petrol", Double.valueOf(100), Double.valueOf(5), "Ghost", "Crimson");
 
 
 
