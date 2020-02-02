@@ -15,6 +15,16 @@ public class MainGroup5 implements IDisplay {
 
         Owner o5 = c.setOwnerDetails(5, "Eveline", "Lumox", "Female", "9/22/1995", "(721) 7650492", "elumox4@weather.com", "elumox4", "kn4tCsv", "Leenti", "(654) 4720600", "europa.eu", null);
 
+        Customer c1 = c.setCustomerDetails(1,"Modesty" , "Waplinton", "Female", "4/19/2002", "5862149283", "mwaplinton0@latimes.com", "mwaplinton0", "NnUVAD", "91 Upham Park", "Toronto", null);
+
+        Customer c2 = c.setCustomerDetails(2,"Jerad" , "Ferreres", "Male", "4/5/2002", "7818998000", "jferreres1@ning.com", "jferreres1", "0LrwRtm7stXw", "47 Maywood Hill", "Montreal", null);
+
+        Customer c3 = c.setCustomerDetails(3,"Jennilee" , "Huffey", "Female", "9/17/2000", "8398821265", "jhuffey2@g.co", "jhuffey2", "VW3xv2HF", "31877 Westport Terrace", "Calgary", null);
+
+        Customer c4 = c.setCustomerDetails(4,"Pedro" , "Cartan", "Male", "11/21/1999", "8074607181", "pcartan3@uol.com.br", "pcartan3", "0ajHhk", "03997 Merry Street", "Ottawa", null);
+
+        Customer c5 = c.setCustomerDetails(5,"Gerhard" , "Baile", "Male", "10/29/1999", "4078983814", "harnoll7@constantcontact.com", "ob7IKoJheb", "citry", "080 Forster Parkway", "Edmonton", null);
+
 
     }
 
