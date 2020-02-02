@@ -73,6 +73,8 @@ public class MainGroup5 implements IDisplay {
 
         MotorCycle mc4 = c.setMotorCycleDetails("WAUKH74F17N262385", "Secured local encryption" , "Honda", false, "Claudio Pedley", true, "Jevco", 1, "Petrol", Double.valueOf(50),Double.valueOf(1), 57, 32);
 
+        MotorCycle mc5 = c.setMotorCycleDetails("JM1CW2CL1F0860981", "Seamlessnational benchmark" , "Yamaha", true, null, true, "Intact Insurance", 2, "Petrol", Double.valueOf(50),Double.valueOf(1), 83, 50);
+
 
 
     }
