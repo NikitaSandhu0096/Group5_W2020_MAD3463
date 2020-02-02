@@ -3,7 +3,9 @@ package com.lambton;
 public class MainGroup5 implements IDisplay {
     public static void main(String[] args) { ;
         //display();
-        MainGroup5 c = new MainGroup5();
+        MainGroup5 c = new MainGroup5(); // Main class object created
+
+        //  Creating objects of  Owner class
 
         Owner o1 = c.setOwnerDetails(1, "Caria", "MacNamee", "Female", "1/15/1982", "(463) 6723367", "cmacnamee0@imgur.com", "cmacnamee0", "kn4tCsv", "Eimbee", "(298) 9624526", "auda.org.au", null);
 
@@ -15,6 +17,8 @@ public class MainGroup5 implements IDisplay {
 
         Owner o5 = c.setOwnerDetails(5, "Eveline", "Lumox", "Female", "9/22/1995", "(721) 7650492", "elumox4@weather.com", "elumox4", "kn4tCsv", "Leenti", "(654) 4720600", "europa.eu", null);
 
+        // Creating objects of Customer class
+
         Customer c1 = c.setCustomerDetails(1,"Modesty" , "Waplinton", "Female", "4/19/2002", "5862149283", "mwaplinton0@latimes.com", "mwaplinton0", "NnUVAD", "91 Upham Park", "Toronto", null);
 
         Customer c2 = c.setCustomerDetails(2,"Jerad" , "Ferreres", "Male", "4/5/2002", "7818998000", "jferreres1@ning.com", "jferreres1", "0LrwRtm7stXw", "47 Maywood Hill", "Montreal", null);
@@ -24,6 +28,8 @@ public class MainGroup5 implements IDisplay {
         Customer c4 = c.setCustomerDetails(4,"Pedro" , "Cartan", "Male", "11/21/1999", "8074607181", "pcartan3@uol.com.br", "pcartan3", "0ajHhk", "03997 Merry Street", "Ottawa", null);
 
         Customer c5 = c.setCustomerDetails(5,"Gerhard" , "Baile", "Male", "10/29/1999", "4078983814", "harnoll7@constantcontact.com", "ob7IKoJheb", "citry", "080 Forster Parkway", "Edmonton", null);
+
+        // Creating objects of Driver Class
 
         Driver d1 = c.setDriverDetails(1,"Pepillo" , "Kitman", "Male", "8/25/1997", "(307) 8389817", "pkitman0@reuters.com", "pkitman0", "FUYGNBaggBD7", "C1273-6361-2413", true, 99988);
 
@@ -35,6 +41,8 @@ public class MainGroup5 implements IDisplay {
 
         Driver d5 = c.setDriverDetails(5,"Robb" , "Seton", "Male", "11/3/1990", "(110) 9340421", "rseton4@alibaba.com", "rseton4", "W4j2wkmAjex", "X1059-2321-6215", true, 74000);
 
+        // Creating objects of VehicleRent
+
         VehicleRent vr1 = c.setVehicleRent("12/6/2019", "12/11/2019", "1N6AD0CU5BC296395", 36);
 
         VehicleRent vr2 = c.setVehicleRent("12/16/2019", "12/17/2019", "WBA3A5C55CF202202", 100);
@@ -44,6 +52,8 @@ public class MainGroup5 implements IDisplay {
         VehicleRent vr4 = c.setVehicleRent("1/20/2020", "1/27/2020", "WAUUL98EX8A747315", 45);
 
         VehicleRent vr5 = c.setVehicleRent("1/29/2020", "1/30/2020", "WAU4FAFL0AA424617", 61);
+
+        // Creating objects Bus class
 
         Bus b1 = c.setBusDetails("1N6AD0CU5BC296395", "Customer-focused bifurcated groupware", "Ford", false, "Pepillo Kitman", false, null, 48, "Petrol", Double.valueOf(250), Double.valueOf(7), "School bus", true, true);
 
@@ -55,6 +65,8 @@ public class MainGroup5 implements IDisplay {
 
         Bus b5 = c.setBusDetails("3VWML7AJ9CM519278", "Assimilated eco-centric process improvement", "Toyota", false, "Nerti Maynell", true, "Jevco", 35, "Petrol", Double.valueOf(250), Double.valueOf(7), "School bus", false, true);
 
+        // Creating objects of Car Class
+
         Car cr1 = c.setCarDetails("WBA3A5C55CF202202", "Visionary optimal neutral-net", "Scion", false, "Pepillo Kitman", false, null, 6, "Petrol", Double.valueOf(100), Double.valueOf(5), "RSX", "Yellow");
 
         Car cr2 = c.setCarDetails("5N1CR2MNXEC181212", "Networked background initiative", "Ford", true, null, true, "Aviva", 8, "Diesel", Double.valueOf(100), Double.valueOf(5), "Econoline E150", "Violet");
@@ -64,6 +76,8 @@ public class MainGroup5 implements IDisplay {
         Car cr4 = c.setCarDetails("ZHWGU5BZ0CL457896", "Multi-lateral content-based customer loyalty", "Ford", true, null, false, null, 8, "Petrol", Double.valueOf(100), Double.valueOf(5), "Esteem", "Mauv");
 
         Car cr5 = c.setCarDetails("WAU4FAFL0AA424617", "Persistent fault-tolerant focus group", "Suzuki", true, null, false, null, 7, "Petrol", Double.valueOf(100), Double.valueOf(5), "Ghost", "Crimson");
+
+        // Creating objects of Motorcycle class
 
         MotorCycle mc1 = c.setMotorCycleDetails("WBA3B9C51DJ591682", "Right-sized 24/7 projection" , "Harley Davidson", false, "Pepillo Kitman", false, null, 1, "Petrol", Double.valueOf(50),Double.valueOf(1), 71, 41);
 
