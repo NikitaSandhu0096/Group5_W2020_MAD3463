@@ -113,11 +113,11 @@ public class MainGroup5 {
         if (!cr1.isSelfDrive())
             cr1.setDriver(d5);
 
-        Car cr2 = setCarDetails("5N1CR2MNXEC181212", "Networked background initiative", true, "Ford", false, 4, "Aviva",
-                4, "Diesel", 100, 5D, "AeroStar", "Pink");
+        Car cr2 = setCarDetails("5N1CR2MC181212", "Networked background initiative", true, "Ford", false, 4, "Aviva",
+                4, "Diesel", 100, 5D, "AeroStar", "White");
         if (!cr2.isSelfDrive())
             cr2.setDriver(d2);
-        Car cr3 = setCarDetails("WAUUL98EX8A747315", "Reverse-engineered motivating moderator", true, "Buick", false, 4,
+        Car cr3 = setCarDetails("WAUUL98EX47315", "Reverse-engineered motivating moderator", true, "Buick", false, 4,
                 "Intact Insurance", 5, "Petrol", 150, 8d, "Econoline E150", "Violet");
         if (!cr3.isSelfDrive())
             cr3.setDriver(d3);
