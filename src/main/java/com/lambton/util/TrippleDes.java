@@ -7,7 +7,7 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESedeKeySpec;
 import org.apache.commons.codec.binary.Base64;
 
-public class TrippleDes {
+public class TrippleDes {                   //http://blog.icodejava.com/tag/java-tutorial-triple-des-encryption/
 
     private static final String UNICODE_FORMAT = "UTF8";
     public static final String DESEDE_ENCRYPTION_SCHEME = "DESede";
