@@ -190,8 +190,8 @@ public class MainGroup5 {
         Customer c2 = setCustomerDetails(2, "Jerad", "Ferreres", "Male", "10/11/1985", 0, "7946132580",
                 "jferreres1", "0LrwRtm7stXw", "258g11hr", "47 Maywood Hill Montreal", "Ontario", null);
 
-        Customer c3 = setCustomerDetails(3, "Jennilee", "Huffey", "Female", "09/08/1989", 0, "8398821265",
-                "jhuffey2@g.co", "jhuffey2", "VW3xv2HF", "31877 Westport Terrace ON", "Calgary", null);
+        Customer c3 = setCustomerDetails(3, "Jennilye", "Huffey", "Female", "09/08/1989", 0, "8398821265",
+                "jenhuffey2@g.co", "jhuffey2", "VW3xv2HF", "31877 Westport Terrace ON", "Calgary", null);
 
         Customer c4 = setCustomerDetails(4, "Pedro", "Cartan", "Male", "08/12/1990", 0, "8074607181",
                 "pcartan3@uol.com.br", "pcartan3", "0ajHhk", "03997 Merry Street", "Ottawa", null);
