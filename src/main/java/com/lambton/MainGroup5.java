@@ -95,7 +95,7 @@ public class MainGroup5 {
                 "Claudio Pedley", 16, "Diesel", 150, 5D, "School Bus", false, false);
         if (!b2.isSelfDrive())
             b2.setDriver(d2);
-        Bus b3 = setBusDetails("3VWML7AJK9CM519278", "Customer-focused bifurcated groupware", false, "Ford", false, 4,
+        Bus b3 = setBusDetails("3VWML7AJK9CM519278", "Customer-focused bifurcated", false, "Ford", false, 4,
                 "Pepillo Kitman", 49, "Petrol", 350, 15D, "Volvo", true, true);
         if (!b3.isSelfDrive())
             b3.setDriver(d3);
