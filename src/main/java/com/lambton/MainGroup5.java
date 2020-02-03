@@ -214,7 +214,7 @@ public class MainGroup5 {
         VehicleRent vr3 = setVehicleRent("10/11/2019", "08/12/2019", "WAUUL98EX8A747315", 66);
         cs2rnt.add(vr3);
 
-        VehicleRent vr4 = setVehicleRent("15/11/2019", "08/12/2019", "WAU4FAFL0AA424617", 45);
+        VehicleRent vr4 = setVehicleRent("15/10/2019", "08/12/2019", "WAU4FAFL0AA424617", 45);
         cs3rnt.add(vr4);
 
         VehicleRent vr5 = setVehicleRent("15/08/2019", "12/09/2019", "JM1CW2CL1F0860981", 61);
