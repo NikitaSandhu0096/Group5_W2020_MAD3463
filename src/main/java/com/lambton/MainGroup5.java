@@ -114,7 +114,7 @@ public class MainGroup5 {
             cr1.setDriver(d5);
 
         Car cr2 = setCarDetails("5N1CR2MC181212", "Networked background initiative", true, "Ford", false, 4, "Aviva",
-                4, "Diesel", 100, 5D, "AeroStar", "White");
+                4, "Diesel", 120, 5D, "AeroStar", "White");
         if (!cr2.isSelfDrive())
             cr2.setDriver(d2);
         Car cr3 = setCarDetails("WAUUL98EX47315", "Reverse-engineered motivating moderator", true, "Buick", false, 4,
@@ -122,7 +122,7 @@ public class MainGroup5 {
         if (!cr3.isSelfDrive())
             cr3.setDriver(d3);
         Car cr4 = setCarDetails("ZHWEU5BZ0CL457896", "Visionary optimal neutral-net", true, "Scion", false, 4,
-                "Pepillo Kitman", 4, "Diesel", 210, 9D, "Sedan", "Red");
+                "Pepillo Kitman", 4, "Electric", 210, 9D, "Sedan", "Red");
         if (!cr4.isSelfDrive())
             cr4.setDriver(d4);
         Car cr5 = setCarDetails("WAU4FAFL0AA424617", "Visionary optimal neutral-net", true, "Scion", false, 4,
