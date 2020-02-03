@@ -55,7 +55,7 @@ public class TrippleDes {                   //http://blog.icodejava.com/tag/java
         String decryptedText = null;
         setEncryptionKey(secretKey);
         cipher.init(Cipher.DECRYPT_MODE, key);
-        byte[] encryptedText = Base64.decodeBase64(encryptedString);
+        byte[] encryptedText = Base64(encryptedString);
         byte[] plainText = cipher.doFinal(encryptedText);
         decryptedText = new String(plainText);
         return decryptedText;
