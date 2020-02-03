@@ -31,8 +31,8 @@ public class MainGroup5 {
         try {
             PrintStream o = new PrintStream(new File(System.getProperty("user.dir") + "/out.txt"));
             PrintStream console = System.out;
-            //System.setOut(o);
-            System.setOut(console);
+            System.setOut(o);
+            //System.setOut(console);
 
             MainGroup5 mg = new MainGroup5();
             //mg.decrypt("MtFUuy14O7I=");
@@ -177,7 +177,7 @@ public class MainGroup5 {
 
     }
 
-    public void createCustomer() throws Exception {
+    public void createCustomer() throws ParseException,Exception {
 
         Customer c2 = setCustomerDetails(2, "Jerad", "Ferreres", "Male", "10/11/1985", 0, "jferreres1@ning.com",
                 "jferreres1", "0LrwRtm7stXw", "47 Maywood Hill", "Montreal", "Ontario", null);
@@ -224,7 +224,7 @@ public class MainGroup5 {
 
     private Owner setOwnerDetails(int id, String firstName, String lastName, String gender, String birthDate,
                                   String mobileNumber, String emailId, String userName, String password, String companyTitle,
-                                  String businessLandLineNumber, String website, List<Vehicle> vehicles) throws Exception {
+                                  String businessLandLineNumber, String website, List<Vehicle> vehicles) throws ParseException,Exception {
         Owner owner = new Owner();
         LocalDate bDate = util.getDateFromString(birthDate);
         owner.setId(id);
@@ -247,7 +247,7 @@ public class MainGroup5 {
 
     public Driver setDriverDetails(int id, String firstName, String lastName, String gender, String birthDate, int age,
                                    String mobileNumber, String emailId, String userName, String password, String drivingLicenceNumber,
-                                   boolean isDrivingHistoryCleared, int salary) throws Exception {
+                                   boolean isDrivingHistoryCleared, int salary) throws ParseException,Exception {
         Driver driver = new Driver();
         LocalDate bDate = util.getDateFromString(birthDate);
         driver.setId(id);
@@ -270,7 +270,7 @@ public class MainGroup5 {
 
     public Customer setCustomerDetails(int id, String firstName, String lastName, String gender, String birthDate,
                                        int age, String mobileNumber, String emailId, String userName, String password, String address, String city,
-                                       List<VehicleRent> vehicleRent) throws Exception {
+                                       List<VehicleRent> vehicleRent) throws ParseException,Exception {
 
         Customer customer = new Customer();
         LocalDate bDate = util.getDateFromString(birthDate);
@@ -354,7 +354,7 @@ public class MainGroup5 {
     }
 
     public VehicleRent setVehicleRent(String startDate, String endDate, String vehicleId, int kilometers)
-            throws ParseException {
+            throws ParseException,Exception {
         VehicleRent rent = new VehicleRent();
         LocalDate sDate = util.getDateFromString(startDate);
         LocalDate eDate = util.getDateFromString(endDate);

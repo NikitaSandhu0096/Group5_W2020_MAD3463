@@ -60,6 +60,4 @@ public class TrippleDes {
         decryptedText = new String(plainText);
         return decryptedText;
     }
-
-
 }

@@ -1,0 +1,86 @@
+_______________________________________________
+-------------------OWNER-----------------------
+_______________________________________________
+********************Displaying Owner Details********************
+Owner [companyTitle=Eimbee, businessLandLineNumber=(298) 9624526, website=auda.org.au, id=1, firstName=Caria, lastName=MacNamee, gender=male, birthDate=1994-10-21, age=25, mobileNumber=(463) 6723367, emailId=cmacnamee0@imgur.com, userName=cmacnamee0, password=MtFUuy14O7I=]
+********************Displaying Bus Details********************
+Bus [busType=MiniBus, iswifiAvailable=false, isAccessibiltyServiceAvailable=true, identificationNumber=1N6AD0CU5BC296395, description=Customer-focused bifurcated groupware, selfDrive=false, manufacturerName=Ford, isInsured=false, vehicleNoOfSeats=4, insuranceProviderName=Pepillo Kitman, seat=9, fuelType=null, ratePerDay=300.0, ratePerKm=10.0]
+********************Displaying Driver Details********************
+Driver [drivingLicenceNumber=C1273-6361-2413, isDrivingHistoryCleared=true, salary=99988, id=1, firstName=Pepillo, lastName=Kitman, gender=Male, birthDate=1985-11-10, age=34, mobileNumber=(307) 8389817, emailId=pkitman0@reuters.com, userName=null, password=mCE+LBMaU7/iFEUZoye0fw==]
+********************Displaying Car Details********************
+Car [carType=Sedan, carColor=Red, identificationNumber=WBA3A5C55CF202202, description=Visionary optimal neutral-net, selfDrive=false, manufacturerName=Scion, isInsured=true, vehicleNoOfSeats=4, insuranceProviderName=Pepillo Kitman, seat=4, fuelType=Diesel, ratePerDay=200.0, ratePerKm=12.0]
+********************Displaying Driver Details********************
+Driver [drivingLicenceNumber=X1059-2321-6215, isDrivingHistoryCleared=true, salary=74000, id=5, firstName=Robb, lastName=Seton, gender=Male, birthDate=1975-07-22, age=44, mobileNumber=(110) 9340421, emailId=rseton4@alibaba.com, userName=null, password=/N/PUzJgk8VcZ0nEcEjb5g==]
+********************Displaying MotorCycle Details********************
+MotorCycle [maxTopSpeed=60, milage=30, identificationNumber=WBA3B9C51DJ591682, description=Right-sized 24/7 projection, selfDrive=true, manufacturerName=Harley Davidson, isInsured=false, vehicleNoOfSeats=2, insuranceProviderName=Pepillo Kitman, seat=2, fuelType=petrol, ratePerDay=10.0, ratePerKm=5.0]
+********************Displaying Owner Details********************
+Owner [companyTitle=Rooxo, businessLandLineNumber=(772) 7884806, website=tmall.com, id=2, firstName=Merrili, lastName=Ellacott, gender=Female, birthDate=1992-10-10, age=27, mobileNumber=(441) 9258734, emailId=kn4mellacott1@parallels.com, userName=mellacott1, password=ypzyzZqtb/rp3JYWg/Rc5g==]
+********************Displaying Bus Details********************
+Bus [busType=School Bus, iswifiAvailable=false, isAccessibiltyServiceAvailable=false, identificationNumber=1G4HC5EM9BU946298, description=Focused actuating help-desk, selfDrive=false, manufacturerName=Chevrolet, isInsured=false, vehicleNoOfSeats=6, insuranceProviderName=Claudio Pedley, seat=16, fuelType=Diesel, ratePerDay=150.0, ratePerKm=5.0]
+********************Displaying Driver Details********************
+Driver [drivingLicenceNumber=U3599-0371-8768, isDrivingHistoryCleared=false, salary=33525, id=2, firstName=Claudio, lastName=Pedley, gender=Male, birthDate=1986-10-09, age=33, mobileNumber=(865) 1017004, emailId=cpedley1@unc.edu, userName=null, password=UKpbNGeRGgD8775kjNM/9g==]
+********************Displaying Car Details********************
+Car [carType=AeroStar, carColor=Pink, identificationNumber=5N1CR2MNXEC181212, description=Networked background initiative, selfDrive=true, manufacturerName=Ford, isInsured=false, vehicleNoOfSeats=4, insuranceProviderName=Aviva, seat=4, fuelType=Diesel, ratePerDay=100.0, ratePerKm=5.0]
+********************Displaying MotorCycle Details********************
+MotorCycle [maxTopSpeed=60, milage=32, identificationNumber=WBAVB13506K975623, description=Multi-lateral needs-based superstructure, selfDrive=true, manufacturerName=Harley Davidson, isInsured=false, vehicleNoOfSeats=2, insuranceProviderName=Pepillo Kitman, seat=2, fuelType=petrol, ratePerDay=9.0, ratePerKm=5.0]
+********************Displaying Owner Details********************
+Owner [companyTitle=Wikivu, businessLandLineNumber=(551) 2776590, website=nature.com, id=3, firstName=Andre, lastName=Elnough, gender=Male, birthDate=1990-07-23, age=29, mobileNumber=(319) 4690060, emailId=aelnough2@dailymail.co.uk, userName=aelnough2, password=BQTTxYl6Cf0I6LckWZEwiQ==]
+********************Displaying Bus Details********************
+Bus [busType=Volvo, iswifiAvailable=true, isAccessibiltyServiceAvailable=true, identificationNumber=3VWML7AJ9CM519278, description=Customer-focused bifurcated groupware, selfDrive=false, manufacturerName=Ford, isInsured=false, vehicleNoOfSeats=4, insuranceProviderName=Pepillo Kitman, seat=49, fuelType=Petrol, ratePerDay=350.0, ratePerKm=15.0]
+********************Displaying Driver Details********************
+Driver [drivingLicenceNumber=R1313-8499-5445, isDrivingHistoryCleared=true, salary=52392, id=3, firstName=Nerti, lastName=Maynell, gender=Female, birthDate=1980-09-15, age=39, mobileNumber=(347) 3808054, emailId=nmaynell2@yandex.ru, userName=null, password=R8U1St0l1CjEoqMsvAdjGA==]
+********************Displaying Car Details********************
+Car [carType=Econoline E150, carColor=Violet, identificationNumber=WAUUL98EX8A747315, description=Reverse-engineered motivating moderator, selfDrive=true, manufacturerName=Buick, isInsured=false, vehicleNoOfSeats=4, insuranceProviderName=Intact Insurance, seat=5, fuelType=Petrol, ratePerDay=150.0, ratePerKm=8.0]
+********************Displaying MotorCycle Details********************
+MotorCycle [maxTopSpeed=60, milage=39, identificationNumber=JH4DB76611S323929, description=Secured local encryption, selfDrive=true, manufacturerName=Harley Davidson, isInsured=true, vehicleNoOfSeats=2, insuranceProviderName=Jevco Kitman, seat=2, fuelType=petrol, ratePerDay=20.0, ratePerKm=5.0]
+********************Displaying Owner Details********************
+Owner [companyTitle=Twitterbeat, businessLandLineNumber=(912) 5937336, website=macromedia.com, id=4, firstName=Kalindi, lastName=Spensly, gender=Female, birthDate=1970-06-15, age=49, mobileNumber=(863) 2253855, emailId=kspensly3@oaic.gov.au, userName=kspensly3, password=0UOuy/57yYc=]
+********************Displaying Bus Details********************
+Bus [busType=double decker, iswifiAvailable=true, isAccessibiltyServiceAvailable=true, identificationNumber=1GD01XEG5FZ726187, description=Focused actuating help-desk, selfDrive=false, manufacturerName=Benz, isInsured=false, vehicleNoOfSeats=6, insuranceProviderName=Claudio Pedley, seat=26, fuelType=Diesel, ratePerDay=210.0, ratePerKm=11.0]
+********************Displaying Driver Details********************
+Driver [drivingLicenceNumber=M6855-0303-0360, isDrivingHistoryCleared=true, salary=66906, id=4, firstName=Raynor, lastName=Stimpson, gender=Male, birthDate=1979-08-20, age=40, mobileNumber=(912) 5278838, emailId=rstimpson3@mozilla.com, userName=null, password=YOFco3DO6ILPvAc9Xh2BEg==]
+********************Displaying Car Details********************
+Car [carType=Sedan, carColor=Red, identificationNumber=ZHWGU5BZ0CL457896, description=Visionary optimal neutral-net, selfDrive=true, manufacturerName=Scion, isInsured=false, vehicleNoOfSeats=4, insuranceProviderName=Pepillo Kitman, seat=4, fuelType=Diesel, ratePerDay=210.0, ratePerKm=9.0]
+********************Displaying MotorCycle Details********************
+MotorCycle [maxTopSpeed=60, milage=30, identificationNumber=WAUKH74F17N262385, description=Seamlessnational benchmark, selfDrive=true, manufacturerName=Harley Davidson, isInsured=true, vehicleNoOfSeats=2, insuranceProviderName=Intact Insurance, seat=2, fuelType=petrol, ratePerDay=10.0, ratePerKm=5.0]
+********************Displaying MotorCycle Details********************
+MotorCycle [maxTopSpeed=60, milage=38, identificationNumber=JM1CW2CL1F0860981, description=Secured local encryption, selfDrive=true, manufacturerName=Harley Davidson, isInsured=false, vehicleNoOfSeats=2, insuranceProviderName=Pepillo Kitman, seat=2, fuelType=petrol, ratePerDay=30.0, ratePerKm=5.0]
+********************Displaying Owner Details********************
+Owner [companyTitle=Rooxo, businessLandLineNumber=(772) 7884806, website=tmall.com, id=5, firstName=Merrili, lastName=Ellacott, gender=Female, birthDate=1975-01-27, age=45, mobileNumber=(441) 9258734, emailId=mellacot1@parallels.com, userName=mellacott1, password=ypzyzZqtb/rp3JYWg/Rc5g==]
+********************Displaying Car Details********************
+Car [carType=Suv, carColor=Black, identificationNumber=WAU4FAFL0AA424617, description=Visionary optimal neutral-net, selfDrive=true, manufacturerName=Scion, isInsured=false, vehicleNoOfSeats=4, insuranceProviderName=Pepillo Kitman, seat=4, fuelType=Diesel, ratePerDay=70.0, ratePerKm=8.0]
+_______________________________________________
+-------------------CUSTOMER-----------------------
+_______________________________________________
+********************Displaying Customer Details********************
+Customer [address=Montreal, city=Ontario, id=2, firstName=Jerad, lastName=Ferreres, gender=Male, birthDate=1985-11-10, age=34, mobileNumber=jferreres1@ning.com, emailId=jferreres1, userName=null, password=CrjoP2kgDxkGcXLeREwMig==]
+********************Displaying Vehicle Rent Details********************
+VehicleRent [ rentStartDate=2019-05-07, rentEndDate=2019-05-08, rentInNoOfDays=1.0, noOfKmDrived=300.0, totalBillToPay=4850.0]
+********************Displaying Bus Details********************
+Bus [busType=Volvo, iswifiAvailable=true, isAccessibiltyServiceAvailable=true, identificationNumber=3VWML7AJ9CM519278, description=Customer-focused bifurcated groupware, selfDrive=false, manufacturerName=Ford, isInsured=false, vehicleNoOfSeats=4, insuranceProviderName=Pepillo Kitman, seat=49, fuelType=Petrol, ratePerDay=350.0, ratePerKm=15.0]
+********************Displaying Driver Details********************
+Driver [drivingLicenceNumber=R1313-8499-5445, isDrivingHistoryCleared=true, salary=52392, id=3, firstName=Nerti, lastName=Maynell, gender=Female, birthDate=1980-09-15, age=39, mobileNumber=(347) 3808054, emailId=nmaynell2@yandex.ru, userName=null, password=R8U1St0l1CjEoqMsvAdjGA==]
+********************Displaying Vehicle Rent Details********************
+VehicleRent [ rentStartDate=2019-10-08, rentEndDate=2019-10-18, rentInNoOfDays=10.0, noOfKmDrived=100.0, totalBillToPay=3200.0]
+********************Displaying Bus Details********************
+Bus [busType=double decker, iswifiAvailable=true, isAccessibiltyServiceAvailable=true, identificationNumber=1GD01XEG5FZ726187, description=Focused actuating help-desk, selfDrive=false, manufacturerName=Benz, isInsured=false, vehicleNoOfSeats=6, insuranceProviderName=Claudio Pedley, seat=26, fuelType=Diesel, ratePerDay=210.0, ratePerKm=11.0]
+********************Displaying Driver Details********************
+Driver [drivingLicenceNumber=M6855-0303-0360, isDrivingHistoryCleared=true, salary=66906, id=4, firstName=Raynor, lastName=Stimpson, gender=Male, birthDate=1979-08-20, age=40, mobileNumber=(912) 5278838, emailId=rstimpson3@mozilla.com, userName=null, password=YOFco3DO6ILPvAc9Xh2BEg==]
+********************Displaying Customer Details********************
+Customer [address=31877 Westport Terrace, city=Calgary, id=3, firstName=Jennilee, lastName=Huffey, gender=Female, birthDate=1989-08-09, age=30, mobileNumber=8398821265, emailId=jhuffey2@g.co, userName=null, password=/n4RGD+urjPp3JYWg/Rc5g==]
+********************Displaying Vehicle Rent Details********************
+VehicleRent [ rentStartDate=2019-11-10, rentEndDate=2019-12-08, rentInNoOfDays=28.0, noOfKmDrived=66.0, totalBillToPay=4728.0]
+********************Displaying Car Details********************
+Car [carType=Econoline E150, carColor=Violet, identificationNumber=WAUUL98EX8A747315, description=Reverse-engineered motivating moderator, selfDrive=true, manufacturerName=Buick, isInsured=false, vehicleNoOfSeats=4, insuranceProviderName=Intact Insurance, seat=5, fuelType=Petrol, ratePerDay=150.0, ratePerKm=8.0]
+********************Displaying Customer Details********************
+Customer [address=03997 Merry Street, city=Ottawa, id=4, firstName=Pedro, lastName=Cartan, gender=Male, birthDate=1990-12-08, age=29, mobileNumber=8074607181, emailId=pcartan3@uol.com.br, userName=null, password=VXZZmy7lP4g=]
+********************Displaying Vehicle Rent Details********************
+VehicleRent [ rentStartDate=2019-11-15, rentEndDate=2019-12-08, rentInNoOfDays=23.0, noOfKmDrived=45.0, totalBillToPay=1970.0]
+********************Displaying Car Details********************
+Car [carType=Suv, carColor=Black, identificationNumber=WAU4FAFL0AA424617, description=Visionary optimal neutral-net, selfDrive=true, manufacturerName=Scion, isInsured=false, vehicleNoOfSeats=4, insuranceProviderName=Pepillo Kitman, seat=4, fuelType=Diesel, ratePerDay=70.0, ratePerKm=8.0]
+********************Displaying Customer Details********************
+Customer [address=080 Forster Parkway, city=Edmonton, id=5, firstName=Gerhard, lastName=Baile, gender=Male, birthDate=1970-05-07, age=49, mobileNumber=4078983814, emailId=harnoll7@constantcontact.com, userName=null, password=MgK1dDAsrjM=]
+********************Displaying Vehicle Rent Details********************
+VehicleRent [ rentStartDate=2019-08-15, rentEndDate=2019-09-12, rentInNoOfDays=28.0, noOfKmDrived=61.0, totalBillToPay=1145.0]
+********************Displaying MotorCycle Details********************
+MotorCycle [maxTopSpeed=60, milage=38, identificationNumber=JM1CW2CL1F0860981, description=Secured local encryption, selfDrive=true, manufacturerName=Harley Davidson, isInsured=false, vehicleNoOfSeats=2, insuranceProviderName=Pepillo Kitman, seat=2, fuelType=petrol, ratePerDay=30.0, ratePerKm=5.0]
