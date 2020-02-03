@@ -122,7 +122,7 @@ public class MainGroup5 {
         if (!cr3.isSelfDrive())
             cr3.setDriver(d3);
         Car cr4 = setCarDetails("ZHWEU5BZ0CL457896", "Visionary optimal neutral-net", true, "Scion", false, 4,
-                "Pepillo Kitman", 4, "Electric", 210, 9D, "Sedan", "Red");
+                "Pepillo Kitmankn", 4, "Electric", 210, 9D, "Sedan", "Red");
         if (!cr4.isSelfDrive())
             cr4.setDriver(d4);
         Car cr5 = setCarDetails("WAU4FAFL0AA424617", "Visionary optimal neutral-net", true, "Scion", false, 4,
