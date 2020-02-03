@@ -206,7 +206,7 @@ public class MainGroup5 {
 
         VehicleRent vr1 = setVehicleRent("07/05/2019", "08/05/2019", "3VWML7AJ9CM519278", 300);
 
-        VehicleRent vr2 = setVehicleRent("08/10/2019", "18/10/2019", "1GD01XEG5FZ726187", 100);
+        VehicleRent vr2 = setVehicleRent("08/10/2019", "28/10/2019", "1GD01XEG5FZ726187", 100);
 
         cs1rnt.add(vr1);
         cs1rnt.add(vr2);
