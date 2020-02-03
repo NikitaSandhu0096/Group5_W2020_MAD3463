@@ -29,10 +29,10 @@ public class MainGroup5 {
 
     public static void main(String[] args) {
         try {
-            PrintStream o = new PrintStream(new File(System.getProperty("user.dir") + "/out.txt"));
+            PrintStream o = new PrintStream(new File(System.getProperty("user.dir") + "/output_vehicle_renting_system.txt"));
             PrintStream console = System.out;
-            //System.setOut(o);
-            System.setOut(console);
+            System.setOut(o);
+           // System.setOut(console);
 
             MainGroup5 mg = new MainGroup5();
             //mg.decrypt("MtFUuy14O7I=");
