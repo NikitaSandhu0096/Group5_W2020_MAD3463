@@ -106,8 +106,9 @@ public class MainGroup5 {
 
         Bus b5 = setBusDetails("1GD01XEG5FZ766187", "Focused actuating help-desk", false, "Benz", false, 6,
                 "Nerti Young", 26, "Diesel", 210, 11D, "double decker", true, true);
-        if (!b4.isSelfDrive())
-            b4.setDriver(d4);
+        if (!b5.isSelfDrive())
+            b5.setDriver(d5);
+        
         Car cr1 = setCarDetails("WBA3A5C5CF282202", "Visionary optimal neutral-net", false, "Scion", true, 4,
                 "Pepillo Kitman", 4, "Diesel", 200, 12D, "Sedan", "Red");
         if (!cr1.isSelfDrive())
