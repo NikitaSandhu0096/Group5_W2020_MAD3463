@@ -187,7 +187,7 @@ public class MainGroup5 {
         Customer c1 = setCustomerDetails(1,"Nikita", "Sandhu", "Female", "13/10/1994",0,"3647912580","nsandhu123@gmail.com",
                 "NSandhu96","sandhu81123","159, Confederation drive", "Mississauga",null);
 
-        Customer c2 = setCustomerDetails(2, "Jerad", "Ferreres", "Male", "10/11/1985", 0, "7946132580",
+        Customer c2 = setCustomerDetails(2, "Jerad", "Ferreres", "Male", "10/11/1995", 0, "7946132580",
                 "jferreres1", "0LrwRtm7stXw", "258g11hr", "47 Maywood Hill Montreal", "Ontario", null);
 
         Customer c3 = setCustomerDetails(3, "Jennilye", "Huffey", "Female", "09/08/1989", 0, "8398821265",
@@ -196,7 +196,7 @@ public class MainGroup5 {
         Customer c4 = setCustomerDetails(4, "Pedro", "Cartan", "Male", "08/12/1990", 0, "8074607181",
                 "pcartan3@uol.com.br", "pcartan3", "0ajHhk", "03997 Merry Street", "Ottawa", null);
 
-        Customer c5 = setCustomerDetails(5, "Gerhard", "Baile", "Male", "07/05/1970", 0, "4078983814",
+        Customer c5 = setCustomerDetails(5, "Gerhard", "Baile", "Male", "07/05/1979", 0, "4078983814",
                 "harnoll7@constantcontact.org", "gbaile2", "citry452", "3080 Forster Parkway", "Edmonton", null);
 
         List<VehicleRent> cs1rnt = new ArrayList<VehicleRent>();
