@@ -133,9 +133,9 @@ public class MainGroup5 {
                 "Harley Davidson", false, 2, "Pepillo Kitman", 2, "petrol", 10, 5, 60, 30);
         MotorCycle mc2 = setMotorCycleDetails("WBAVB13506K975623", "Multi-lateral needs-based superstructure", true,
                 "Harley Davidson", false, 2, "Pepillo Kitman", 2, "petrol", 9, 5, 60, 32);
-        MotorCycle mc3 = setMotorCycleDetails("JH4DB76611S323929", "Secured local encryption", true, "Harley Davidson",
+        MotorCycle mc3 = setMotorCycleDetails("JH4DB76611SNM929", "Secured local encryption", true, "Harley Davidson",
                 true, 2, "Jevco Kitman", 2, "petrol", 20, 5, 60, 39);
-        MotorCycle mc4 = setMotorCycleDetails("WAUKH74F17N262385", "Seamlessnational benchmark", true,
+        MotorCycle mc4 = setMotorCycleDetails("WAUKH74F17NO62385", "Seamlessnational benchmark", true,
                 "Harley Davidson", true, 2, "Intact Insurance", 2, "petrol", 10, 5, 60, 30);
         MotorCycle mc5 = setMotorCycleDetails("JM1CW2CL1F0860981", "Secured local encryption", true, "Harley Davidson",
                 false, 2, "Pepillo Kitman", 2, "petrol", 30, 5, 60, 38);
