@@ -197,7 +197,7 @@ public class MainGroup5 {
                 "pcartan3@uol.com.br", "pcartan3", "0ajHhk", "03997 Merry Street", "Ottawa", null);
 
         Customer c5 = setCustomerDetails(5, "Gerhard", "Baile", "Male", "07/05/1970", 0, "4078983814",
-                "harnoll7@constantcontact.com", "gbaile2", "citry452", "3080 Forster Parkway", "Edmonton", null);
+                "harnoll7@constantcontact.org", "gbaile2", "citry452", "3080 Forster Parkway", "Edmonton", null);
 
         List<VehicleRent> cs1rnt = new ArrayList<VehicleRent>();
         List<VehicleRent> cs2rnt = new ArrayList<VehicleRent>();
