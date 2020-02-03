@@ -121,7 +121,7 @@ public class MainGroup5 {
                 "Intact Insurance", 5, "Petrol", 150, 8d, "Econoline E150", "Violet");
         if (!cr3.isSelfDrive())
             cr3.setDriver(d3);
-        Car cr4 = setCarDetails("ZHWGU5BZ0CL457896", "Visionary optimal neutral-net", true, "Scion", false, 4,
+        Car cr4 = setCarDetails("ZHWEU5BZ0CL457896", "Visionary optimal neutral-net", true, "Scion", false, 4,
                 "Pepillo Kitman", 4, "Diesel", 210, 9D, "Sedan", "Red");
         if (!cr4.isSelfDrive())
             cr4.setDriver(d4);
