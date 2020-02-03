@@ -70,7 +70,7 @@ public class MainGroup5 {
         Driver d2 = setDriverDetails(2, "Claudio", "Pedley", "Male", "09/10/1986", 0, "(865) 1017004",
                 "cpedley1@unc.edu", "cpedley1", "xGN14vfkHll", "U3599-0371-8768", false, 33525);
         Driver d3 = setDriverDetails(3, "Nerti", "Maynell", "Female", "15/09/1980", 0, "(347) 3808054",
-                "nmaynell2@yandex.ru", "nmaynell2", "0WDTAu0r5NF", "R1313-8499-5445", true, 52392);
+                "nmaynell2@yandex.com", "nmaynell2", "0WDTAu0r5NF", "R1313-8499-5445", true, 52392);
         Driver d4 = setDriverDetails(4, "Raynor", "Stimpson", "Male", "20/08/1979", 0, "(912) 5278838",
                 "rstimpson3@mozilla.com", "rstimpsone13", "TALT6iyFc", "M6855-0303-0360", true, 66906);
         Driver d5 = setDriverDetails(5, "Robb", "Seton", "Male", "22/07/1975", 0, "(110) 9340421",
@@ -87,15 +87,15 @@ public class MainGroup5 {
         List<Vehicle> owner5vehicleList = new ArrayList<Vehicle>();
         owner5.setVehicles(owner5vehicleList);
 
-        Bus b1 = setBusDetails("1N6AD0CU5BC296395", "Customer-focused bifurcated groupware", false, "Ford", false, 4,
+        Bus b1 = setBusDetails("1N6AD0CU55BC296395", "Customer-focused bifurcated group ware", false, "Ford", false, 4,
                 "Pepillo Kitman", 9, null, 300, 10D, "MiniBus", false, true);
         if (!b1.isSelfDrive())
             b1.setDriver(d1);
-        Bus b2 = setBusDetails("1G4HC5EM9BU946298", "Focused actuating help-desk", false, "Chevrolet", false, 6,
+        Bus b2 = setBusDetails("1G4HC5EMR9BU946298", "Focused actuating help-desk", false, "Chevrolet", false, 6,
                 "Claudio Pedley", 16, "Diesel", 150, 5D, "School Bus", false, false);
         if (!b2.isSelfDrive())
             b2.setDriver(d2);
-        Bus b3 = setBusDetails("3VWML7AJ9CM519278", "Customer-focused bifurcated groupware", false, "Ford", false, 4,
+        Bus b3 = setBusDetails("3VWML7AJK9CM519278", "Customer-focused bifurcated groupware", false, "Ford", false, 4,
                 "Pepillo Kitman", 49, "Petrol", 350, 15D, "Volvo", true, true);
         if (!b3.isSelfDrive())
             b3.setDriver(d3);
