@@ -185,7 +185,7 @@ public class MainGroup5 {
     public void createCustomer() throws Exception {
 
         Customer c1 = setCustomerDetails(1,"Nikita", "Sandhu", "Female", "13/10/1994",0,"3647912580","nsandhu123@gmail.com",
-                "NSandhu96","sandhu123","159, Confederation drive", "Mississauga",null);
+                "NSandhu96","sandhu81123","159, Confederation drive", "Mississauga",null);
 
         Customer c2 = setCustomerDetails(2, "Jerad", "Ferreres", "Male", "10/11/1985", 0, "7946132580",
                 "jferreres1", "0LrwRtm7stXw", "258g11hr", "47 Maywood Hill Montreal", "Ontario", null);
